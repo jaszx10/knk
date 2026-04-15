@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>KNK TVS - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#0a1e7b",
+                        "secondary": "#bb0013",
+                        "primary-container": "#283891",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "on-surface": "#1a1c1c",
+                        "on-surface-variant": "#454652",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-container-highest": "#e2e2e2",
+                        "outline": "#767683",
+                        "outline-variant": "#c6c5d4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(10, 30, 123, 0.2);
+        }
+        .modal-active {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/20">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md">
+        <div class="flex justify-between items-center max-w-[1440px] mx-auto px-12 h-20">
+            <div class="flex items-center gap-2">
+                <a href="index.html" class="text-2xl font-black text-[#0a1e7b] italic font-headline tracking-tight">KNK TVS</a>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-[#bb0013] font-bold border-b-2 border-[#bb0013] pb-1 font-headline tracking-tight" href="index.html">Home</a>
+                <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="models.html">Models</a>
+                <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="iqube.html">iQube</a>
+                <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="locations.html">Location</a>
+                <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="about.html">About Us</a>
+                <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="shop.html">Shop</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="bg-primary text-white px-4 py-2 rounded-lg font-bold text-sm hover:bg-secondary transition-colors" onclick="openBookingModal()">
+                    Book Test Ride
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative min-h-[921px] flex items-center overflow-hidden bg-surface-container-low">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover opacity-90 scale-105" data-alt="Modern sleek electric white TVS iQube scooter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYdu7dW8ljx_CbLLN_fEuWscbKCbWm__FYuSbmEkoXRQ6kOQx6-RqG88l6WkzC3rUufoCxbpnw9B0mvm674KpZU_As_kor318TmWJrVFkf3xtBn2WNFv3Zp7P-1zGJA5h54iM_MH4DKkLIoByTvNC5H0OhVwQ53erbfkDUWUpOq5eAM_dLayd_Pvkmgd8gEVZ9FwEPhkSxIZMKSWmE4Y69tXy5dprxD8F-3izN7FGsVyKABp52JoK-V8-RRAv06cVsf-tX7UB1takE"/>
+                <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent"></div>
+            </div>
+            <div class="relative z-10 max-w-[1440px] mx-auto px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-2">
+                        <span class="text-secondary font-headline font-extrabold tracking-widest text-sm uppercase">Future of Mobility</span>
+                        <h1 class="text-7xl font-headline font-black text-primary leading-[0.9] tracking-tighter italic">TVS iQube<br/><span class="text-on-surface not-italic">Electric.</span></h1>
+                    </div>
+                    <p class="text-lg text-on-surface-variant max-w-md leading-relaxed">Experience the silent revolution. 100km range, 75kmph top speed, and a smarter way to commute through the city.</p>
+                    <div class="flex items-center gap-6">
+                        <button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-xl font-bold hover:scale-95 duration-200 transition-transform" onclick="openBookingModal()">
+                            Book Test Ride
+                        </button>
+                        <a href="iqube.html" class="flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all duration-300">
+                            Explore Features <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:flex flex-col gap-4 items-end">
+                    <div class="bg-white/70 backdrop-blur-xl p-6 rounded-xl shadow-none border-none w-64 transform translate-x-12">
+                        <span class="text-secondary font-black text-4xl block">100 KM</span>
+                        <span class="text-on-surface-variant font-label text-sm">Range per charge</span>
+                    </div>
+                    <div class="bg-white/70 backdrop-blur-xl p-6 rounded-xl shadow-none border-none w-64">
+                        <span class="text-primary font-black text-4xl block">4.2 SEC</span>
+                        <span class="text-on-surface-variant font-label text-sm">0 to 40 km/h acceleration</span>
+                    </div>
+                    <div class="bg-white/70 backdrop-blur-xl p-6 rounded-xl shadow-none border-none w-64 transform translate-x-8">
+                        <span class="text-on-surface font-black text-4xl block">SMARTX</span>
+                        <span class="text-on-surface-variant font-label text-sm">Connected dashboard</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sustainability Dashboard -->
+        <section class="py-24 bg-surface">
+            <div class="max-w-[1440px] mx-auto px-12">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    <div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-10">
+                        <div class="flex justify-between items-end mb-12">
+                            <div>
+                                <h2 class="text-4xl font-headline font-black text-primary italic mb-2 tracking-tight">Sustainability Impact</h2>
+                                <p class="text-on-surface-variant font-body">Real-time environmental contribution by KNK TVS electric community.</p>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-6xl font-headline font-black text-secondary">24.5k</span>
+                                <span class="block text-xs font-label text-outline uppercase tracking-widest">Tons CO2 Saved</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="bg-surface-container-high p-8 rounded-xl space-y-4">
+                                <span class="material-symbols-outlined text-primary text-4xl">park</span>
+                                <div>
+                                    <h4 class="font-black text-2xl text-primary">120,432</h4>
+                                    <p class="text-sm text-on-surface-variant">Equivalent Trees Planted</p>
+                                </div>
+                            </div>
+                            <div class="bg-primary p-8 rounded-xl space-y-4 text-on-primary">
+                                <span class="material-symbols-outlined text-on-primary-container text-4xl" style="font-variation-settings: 'FILL' 1;">electric_bolt</span>
+                                <div>
+                                    <h4 class="font-black text-2xl">4.2M</h4>
+                                    <p class="text-sm opacity-80">Green Kilometers Driven</p>
+                                </div>
+                            </div>
+                            <div class="bg-surface-container-high p-8 rounded-xl space-y-4">
+                                <span class="material-symbols-outlined text-secondary text-4xl">gas_meter</span>
+                                <div>
+                                    <h4 class="font-black text-2xl text-primary">₹18.4Cr</h4>
+                                    <p class="text-sm text-on-surface-variant">Fuel Costs Saved Yearly</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8 bg-surface-container rounded-xl h-64 relative overflow-hidden flex items-end px-8">
+                            <div class="absolute inset-0 p-8 flex justify-between items-start">
+                                <span class="font-headline font-bold text-primary/20 text-8xl">NET ZERO</span>
+                                <div class="bg-white/80 backdrop-blur p-4 rounded-lg">
+                                    <p class="text-xs font-bold text-primary uppercase">Current Trajectory</p>
+                                    <p class="text-xl font-black">+14% Growth</p>
+                                </div>
+                            </div>
+                            <div class="w-full flex items-end gap-2 h-32">
+                                <div class="bg-primary/10 w-full h-[40%] rounded-t-lg"></div>
+                                <div class="bg-primary/20 w-full h-[55%] rounded-t-lg"></div>
+                                <div class="bg-primary/30 w-full h-[45%] rounded-t-lg"></div>
+                                <div class="bg-primary/40 w-full h-[65%] rounded-t-lg"></div>
+                                <div class="bg-primary/60 w-full h-[80%] rounded-t-lg"></div>
+                                <div class="bg-primary w-full h-[95%] rounded-t-lg"></div>
+                                <div class="bg-secondary w-full h-[100%] rounded-t-lg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 space-y-8">
+                        <div class="relative aspect-square rounded-xl overflow-hidden group">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKwkL0Ag6KAglC4EYW84-xuOlCOJaYoufxxFvpqOrJmF9xAoZkY8kzHqo2hNBrSQXebpFRxJHv5lsLSAHdW17mPhSluCdyHVbfAM_Zy3EvT_ZRyrVqZMPniQq2BQ4YmFEBU95Omr234_Cv9D1mhEFeorfSMmOo9Wq-EOfXKLKADz8_o1ajH1GOwD-N1yXNrscjsW86h-Ieibuty7egd9V1Q86mXAD1amHb7FbBYTijWCtMyjtQzleLg8MvwJ60nNMrrX3tHnReFtnb"/>
+                            <div class="absolute inset-0 bg-primary/40 flex flex-col justify-end p-8 text-on-primary">
+                                <h3 class="text-2xl font-black leading-tight mb-4 italic">Our Green Commitment</h3>
+                                <p class="text-sm opacity-90 mb-6">Learn how KNK TVS is leading the charge towards a sustainable carbon-neutral future in mobility.</p>
+                                <button class="w-fit border-b-2 border-on-primary font-bold text-sm tracking-widest uppercase">Read Whitepaper</button>
+                            </div>
+                        </div>
+                        <div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant/10">
+                            <h4 class="font-black text-primary mb-4 italic">Join the Movement</h4>
+                            <p class="text-sm text-on-surface-variant leading-relaxed mb-6">Switch to electric today and track your personal carbon savings via the KNK Connect App.</p>
+                            <div class="flex gap-4">
+                                <div class="h-10 w-28 bg-on-surface rounded flex items-center justify-center cursor-pointer">
+                                    <span class="text-[10px] text-surface font-bold">App Store</span>
+                                </div>
+                                <div class="h-10 w-28 bg-on-surface rounded flex items-center justify-center cursor-pointer">
+                                    <span class="text-[10px] text-surface font-bold">Play Store</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Models -->
+        <section class="py-24 bg-surface-container-low overflow-hidden">
+            <div class="max-w-[1440px] mx-auto px-12">
+                <div class="flex justify-between items-center mb-16">
+                    <h2 class="text-5xl font-headline font-black text-primary italic tracking-tighter">Lineup 2024</h2>
+                    <a href="models.html" class="text-primary font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">View All Models <span class="material-symbols-outlined">trending_flat</span></a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="md:col-span-2 relative group">
+                        <div class="bg-surface-container-lowest rounded-xl p-12 h-full flex flex-col justify-between overflow-hidden">
+                            <div class="relative z-10">
+                                <span class="text-secondary font-black tracking-[0.3em] uppercase text-xs">Performance</span>
+                                <h3 class="text-6xl font-headline font-black text-primary mt-4 italic">Apache RR 310</h3>
+                                <p class="text-on-surface-variant mt-4 max-w-sm">Pure racing DNA. Precision engineering. Experience the apex predator of the 300cc segment.</p>
+                                <div class="mt-8 space-y-2">
+                                    <div class="flex items-center gap-2 font-black text-primary">
+                                        <span class="material-symbols-outlined text-sm">speed</span> 160 KMPH TOP SPEED
+                                    </div>
+                                    <div class="flex items-center gap-2 font-black text-primary">
+                                        <span class="material-symbols-outlined text-sm">settings_input_component</span> 34 HP POWER
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="absolute -bottom-10 -right-20 w-[80%] object-contain transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQK5D_VCVPY1brsKV2wh7khQ0Cs2qT_DJ2sjcYE6dEDVXxgOFZymqIiGYj2CuLvRrDtTedftpkaQT0bbhfcqw-raJoPckzdUdtXEgO9RCLeDxWXCOGbz8EYI_7l3apalhLpIplzl5PMSXcltUW5ZSTV7XtQXNLDK77onVZLrrcZlKlQoZOG3thyuWDGABH-JDyuntu3nWWJ1SIGLovaUrZsdrRFPYMSBH6jMTFg27tOlGe0c_EhtvSkNSp0ktWrsldYckzY42BZJql"/>
+                        </div>
+                    </div>
+                    <div class="bg-surface-container-lowest rounded-xl p-10 flex flex-col justify-between group">
+                        <div>
+                            <span class="text-primary/40 font-black tracking-[0.3em] uppercase text-xs">Lifestyle</span>
+                            <h3 class="text-4xl font-headline font-black text-primary mt-2 italic">Jupiter 125</h3>
+                            <p class="text-sm text-on-surface-variant mt-4">The intelligent choice for the modern family. More space, more comfort.</p>
+                        </div>
+                        <div class="relative mt-8">
+                            <img class="w-full object-contain transform group-hover:-translate-y-4 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAzVXdK9tcahy9q-mWMU7SRhU92Qw_7zwBlAa-b3ImIY7i6NKcG5elzI8YPEhop-sSpzBrSgxeoycYp_4T7R1DmJDawwwz680x0Ym4zJK2s5JV8_EcF082L5RShgnyKl3w5VrSmL8xG0Vzal4zD5yiqzu3c_aIQoM2jUKXc7st2822X1UwHcloASvtgeDCg5tCalOA3IjlQ_X-J3TNJhKnoH8yLvynBNkWfheI3suyzFysAQm8V7xlyK3vHR_3OsCs9BgXhDqQB4Pj"/>
+                        </div>
+                        <button class="mt-6 w-full py-4 border border-outline-variant/30 rounded-xl font-bold hover:bg-primary hover:text-on-primary transition-colors">Compare Stats</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-[1440px] mx-auto px-12 py-16">
+            <div class="space-y-6">
+                <span class="text-xl font-bold text-[#0a1e7b] font-headline">KNK TVS</span>
+                <p class="text-slate-500 text-sm font-body leading-relaxed">Pioneering the future of two-wheelers through engineering excellence and a commitment to sustainable performance.</p>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer">social_leaderboard</span>
+                    <span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer">potted_plant</span>
+                    <span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer">share</span>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-headline font-bold text-[#0a1e7b] mb-6">Quick Links</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-slate-500 hover:text-[#bb0013] underline underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="about.html">About Our Dealership</a></li>
+                    <li><a class="text-slate-500 hover:text-[#bb0013] underline underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="#" onclick="openBookingModal(); return false;">Service Booking</a></li>
+                    <li><a class="text-slate-500 hover:text-[#bb0013] underline underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="shop.html">Genuine Accessories</a></li>
+                    <li><a class="text-slate-500 hover:text-[#bb0013] underline underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="locations.html">Insurance Partners</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-headline font-bold text-[#0a1e7b] mb-6">Legal &amp; Support</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-slate-500 hover:text-[#bb0013] underline underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="#">Privacy Policy</a></li>
+                    <li><a class="text-slate-500 hover:text-[#bb0013] underline underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="#">Terms of Service</a></li>
+                    <li><a class="text-slate-500 hover:text-[#bb0013] underline underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="locations.html">Dealer Locator</a></li>
+                    <li><a class="text-slate-500 hover:text-[#bb0013] underline underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="about.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-headline font-bold text-[#0a1e7b] mb-6">Visit Our Showroom</h4>
+                <div class="space-y-4 text-sm text-slate-500 leading-relaxed">
+                    <p class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">location_on</span> 123 Racing Avenue, High Performance Park, Bengaluru, 560001</p>
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">call</span> +91 98765 43210</p>
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">schedule</span> Mon - Sat: 9:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-[1440px] mx-auto px-12 pb-12">
+            <div class="pt-8 border-t border-slate-200">
+                <p class="text-slate-500 text-sm font-body">© 2024 KNK TVS Motor Company. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-2xl w-full max-w-lg overflow-hidden shadow-2xl relative">
+            <button class="absolute top-4 right-4 text-slate-400 hover:text-primary transition-colors" onclick="closeBookingModal()">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="p-8">
+                <h3 class="text-3xl font-headline font-black text-primary italic mb-2">Book a Test Ride</h3>
+                <p class="text-on-surface-variant font-body mb-6">Fill in the details and we'll get in touch with you shortly.</p>
+                
+                <form action="https://formspree.io/f/xvgrvjwv" method="POST" class="space-y-4">
+                    <input type="hidden" name="_to" value="jasperjeyanth@gmail.com">
+                    <div>
+                        <label class="block text-xs font-bold text-outline uppercase tracking-widest mb-2 px-1">Full Name</label>
+                        <input type="text" name="name" required class="w-full px-4 py-3 bg-surface-container-high border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Enter your full name">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-outline uppercase tracking-widest mb-2 px-1">Email Address</label>
+                            <input type="email" name="email" required class="w-full px-4 py-3 bg-surface-container-high border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all" placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-outline uppercase tracking-widest mb-2 px-1">Phone Number</label>
+                            <input type="tel" name="phone" required class="w-full px-4 py-3 bg-surface-container-high border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all" placeholder="+91 00000 00000">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-outline uppercase tracking-widest mb-2 px-1">Select Model</label>
+                        <select name="model" class="w-full px-4 py-3 bg-surface-container-high border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all">
+                            <option value="iQube">TVS iQube (Electric)</option>
+                            <option value="Apache RR 310">Apache RR 310</option>
+                            <option value="Jupiter 125">Jupiter 125</option>
+                            <option value="Ronin">TVS Ronin</option>
+                            <option value="Apache RTR 200">Apache RTR 200 4V</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-secondary text-white py-4 rounded-xl font-bold hover:bg-secondary-container transition-colors shadow-lg shadow-secondary/20 mt-6">
+                        Confirm Booking
+                    </button>
+                    <p class="text-center text-[10px] text-slate-400 mt-4">By clicking "Confirm Booking", you agree to our terms and conditions.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openBookingModal() {
+            document.getElementById('bookingModal').classList.remove('hidden');
+            document.body.classList.add('modal-active');
+        }
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.add('hidden');
+            document.body.classList.remove('modal-active');
+        }
+        // Close modal on outside click
+        window.onclick = function(event) {
+            let modal = document.getElementById('bookingModal');
+            if (event.target == modal) {
+                closeBookingModal();
+            }
+        }
+    </script>
+</body>
+</html>

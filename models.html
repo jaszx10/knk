@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>KNK TVS - Models</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#0a1e7b",
+                        "secondary": "#bb0013",
+                        "primary-container": "#283891",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "on-surface": "#1a1c1c",
+                        "on-surface-variant": "#454652",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-container-highest": "#e2e2e2",
+                        "outline": "#767683",
+                        "outline-variant": "#c6c5d4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-asymmetry {
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+        }
+        .modal-active {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary/20">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md">
+        <div class="flex justify-between items-center max-w-[1440px] mx-auto px-12 h-20">
+            <div class="flex items-center gap-2">
+                <a href="index.html" class="text-2xl font-black text-[#0a1e7b] italic font-headline tracking-tight">KNK TVS</a>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="index.html">Home</a>
+                <a class="text-[#bb0013] font-bold border-b-2 border-[#bb0013] pb-1 font-headline tracking-tight" href="models.html">Models</a>
+                <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="iqube.html">iQube</a>
+                <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="locations.html">Location</a>
+                <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="about.html">About Us</a>
+                <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="shop.html">Shop</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="bg-primary text-white px-4 py-2 rounded-lg font-bold text-sm hover:bg-secondary transition-colors" onclick="openBookingModal()">
+                    Book Test Ride
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative h-[614px] overflow-hidden bg-primary">
+            <div class="absolute inset-0 opacity-40">
+                <img class="w-full h-full object-cover" data-alt="Cinematic shot of a racing motorcycle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZI4QALpgLOzUOhvpsP9orq7m-1WgCeZagEC-x5VyuN3i8KsHG8VjW0sMTdv2OpRl--CN68dWIUbzVzCl4MqCVl9gtdXWiTc1Bwt2GbDZfh07nllP6iGKcmSJrRX9yWWQmux0ZKHa3VqTS6SPyjV9DZheMnkbcLGQb2w2S_pzLVxsFhwpDq9vNhrJ_KOc0-wuLK4L5wu4IE6MwvuDZ-fg88ChLIUh5eT3Frp5fpEYBpqawrsRrzBD6atFYYdSdCh1u8LHh179DTwK2"/>
+            </div>
+            <div class="relative max-w-[1440px] mx-auto px-12 h-full flex flex-col justify-center items-start">
+                <span class="text-secondary font-bold font-headline tracking-widest text-sm mb-4 uppercase">The 2024 Collection</span>
+                <h1 class="text-white text-6xl md:text-8xl font-black font-headline tracking-tighter leading-none mb-6">ENGINEERED <br/>TO OUTPERFORM.</h1>
+                <p class="text-surface-variant max-w-xl text-lg mb-8 leading-relaxed">From the adrenaline-fueled Apache series to the eco-conscious iQube, explore a range built for precision, speed, and sustainability.</p>
+                <div class="flex space-x-4">
+                    <button class="bg-gradient-to-r from-primary to-primary-container text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform">VIEW ALL RANGE</button>
+                    <button class="bg-secondary text-white px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform" onclick="openBookingModal()">BOOK TEST RIDE</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Filter -->
+        <section class="bg-surface-container-lowest py-8 sticky top-20 z-40 border-b border-outline-variant/10">
+            <div class="max-w-[1440px] mx-auto px-12 flex items-center justify-between">
+                <div class="flex space-x-8">
+                    <button class="text-primary font-bold border-b-2 border-primary pb-2">ALL MODELS</button>
+                    <button class="text-slate-400 font-medium hover:text-primary transition-colors">PERFORMANCE</button>
+                    <button class="text-slate-400 font-medium hover:text-primary transition-colors">COMMUTER</button>
+                    <button class="text-slate-400 font-medium hover:text-primary transition-colors">ELECTRIC</button>
+                    <button class="text-slate-400 font-medium hover:text-primary transition-colors">SCOOTERS</button>
+                </div>
+                <div class="flex items-center space-x-2 text-slate-500 text-sm">
+                    <span class="material-symbols-outlined text-sm">tune</span>
+                    <span class="font-medium">FILTER &amp; SORT</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="py-20 bg-surface">
+            <div class="max-w-[1440px] mx-auto px-12">
+                <div class="mb-24">
+                    <div class="flex items-baseline space-x-4 mb-12">
+                        <h2 class="text-4xl font-black font-headline text-primary">PERFORMANCE</h2>
+                        <div class="h-1 flex-grow bg-surface-container-high rounded-full"></div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                        <!-- APACHE RR 310 -->
+                        <div class="group">
+                            <div class="relative bg-surface-container-lowest h-[400px] rounded-xl overflow-visible mb-6 flex items-center justify-center">
+                                <div class="absolute top-6 left-6 z-10">
+                                    <span class="bg-secondary text-white text-[10px] font-black px-2 py-1 rounded-sm italic">RACING DNA</span>
+                                </div>
+                                <img class="w-full h-full object-contain p-8 group-hover:scale-110 transition-transform duration-500 drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlsTsMs26Wewz8PdAdoTNar4WzRTj7D_EqbKtV3fYHH2CBYRYDfnaHYmgwVIpNO0jQhsQ6Onrk9gO6W_s-XjXG29O8vijMEYC8OuBN3t9sCkaKEAz9w5to-fsVl-ZiPC9IzOc6IV2d6viqlkdnrl6ZIq1GCxplPD391uxJbw_iSauD1xf5wc5cisvN9BSlhz9c704xFYAoL0LZ7xNUvrsI1W425nJOs8ZsVR30DxCsCTH6IjShF-rP-kadc-VgnlpQsPZm1DmwrwzD"/>
+                                <div class="absolute bottom-4 right-4 glass-panel px-4 py-2 rounded-full border border-white/20">
+                                    <span class="text-xs font-bold text-primary font-label">312.2 cc</span>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-black font-headline text-primary mb-2">APACHE RR 310</h3>
+                            <p class="text-slate-500 text-sm mb-4 line-clamp-2">The ultimate track tool designed for the purists. Superior aerodynamics meeting brute power.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-on-surface">₹ 2,72,000*</span>
+                                <button class="text-secondary font-bold text-sm flex items-center hover:translate-x-2 transition-transform" onclick="openBookingModal('Apache RR 310')">EXPLORE <span class="material-symbols-outlined ml-1">arrow_forward</span></button>
+                            </div>
+                        </div>
+                        <!-- APACHE RTR 200 -->
+                        <div class="group">
+                            <div class="relative bg-surface-container-lowest h-[400px] rounded-xl overflow-visible mb-6 flex items-center justify-center">
+                                <img class="w-full h-full object-contain p-8 group-hover:scale-110 transition-transform duration-500 drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcGJw3VUy6zO2iF90VOfC69Mp2duizcoNqqTwoBlX6uejblsapj0OF57ARlkoWwwxHKjVLjyuJIzJSaNgdRXHtcSbcsoTcs0gIsajrlzMqo7mOGvxKyalZxCbSNkr4tqb-J9U6uGLnj1i_o8QUdfrM9snjAzi8Hw9MTKekAysvpk8X5KypBWdIQOz-76pnW73gs0orRP1jAP-KrD1GkAs8IqA7aBT3X_aiKr1rhz-Qabl_wTEjyTRjFsMsyfunTxeIOBaD45ny-J20"/>
+                                <div class="absolute bottom-4 right-4 glass-panel px-4 py-2 rounded-full border border-white/20">
+                                    <span class="text-xs font-bold text-primary font-label">197.75 cc</span>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-black font-headline text-primary mb-2">APACHE RTR 200 4V</h3>
+                            <p class="text-slate-500 text-sm mb-4 line-clamp-2">Unleash the racer within with the most advanced naked sports bike in its class.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-on-surface">₹ 1,46,000*</span>
+                                <button class="text-secondary font-bold text-sm flex items-center hover:translate-x-2 transition-transform" onclick="openBookingModal('Apache RTR 200 4V')">EXPLORE <span class="material-symbols-outlined ml-1">arrow_forward</span></button>
+                            </div>
+                        </div>
+                        <!-- RONIN -->
+                        <div class="group">
+                            <div class="relative bg-surface-container-lowest h-[400px] rounded-xl overflow-visible mb-6 flex items-center justify-center">
+                                <div class="absolute top-6 left-6 z-10">
+                                    <span class="bg-primary text-white text-[10px] font-black px-2 py-1 rounded-sm italic">UNSCRIPTED</span>
+                                </div>
+                                <img class="w-full h-full object-contain p-8 group-hover:scale-110 transition-transform duration-500 drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGV6yqT6HHZEO93ikUI8oMyrRQrAlwzuhE-YeaOk33fGiNt2ww1v0J8pepilZPSEKg-ai3Rx1Ft7zZoDqv9px9BiFmSpbvAPINEePOd6TBM5_iMbjGQ9ZQrevKT5jLyS6F5rE1klNjMo6oxIfUVOiIDt-NvxXuvtIlOYI9Ahcrgcr2cu9-01YG_1Y_G46JS3l0YAsbI599_8atYNXSB6JFVP-M8PijxmUM2B7kgsvXBsglkBEgR-IY3UB3vHnGzRixBcpo0iHd4qSZ"/>
+                                <div class="absolute bottom-4 right-4 glass-panel px-4 py-2 rounded-full border border-white/20">
+                                    <span class="text-xs font-bold text-primary font-label">225.9 cc</span>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-black font-headline text-primary mb-2">RONIN</h3>
+                            <p class="text-slate-500 text-sm mb-4 line-clamp-2">Move beyond the conventional. The first modern-retro scrambler from the house of TVS.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-xl font-bold text-on-surface">₹ 1,49,000*</span>
+                                <button class="text-secondary font-bold text-sm flex items-center hover:translate-x-2 transition-transform" onclick="openBookingModal('Ronin')">EXPLORE <span class="material-symbols-outlined ml-1">arrow_forward</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-[1440px] mx-auto px-12 py-16">
+            <div class="space-y-6">
+                <span class="text-xl font-bold text-[#0a1e7b] font-headline">KNK TVS</span>
+                <p class="text-slate-500 text-sm font-body leading-relaxed">Authorized TVS flagship dealer offering the complete range of motorcycles, scooters and professional service support.</p>
+                <div class="flex space-x-4">
+                    <span class="material-symbols-outlined text-primary">social_leaderboard</span>
+                    <span class="material-symbols-outlined text-primary">share</span>
+                    <span class="material-symbols-outlined text-primary">groups</span>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-[#0a1e7b] font-bold mb-6 font-headline">Models</h4>
+                <ul class="space-y-4 text-sm text-slate-500">
+                    <li><a class="hover:text-[#bb0013] underline underline-offset-4 transition-opacity" href="models.html">Apache Series</a></li>
+                    <li><a class="hover:text-[#bb0013] underline underline-offset-4 transition-opacity" href="models.html">Jupiter Series</a></li>
+                    <li><a class="hover:text-[#bb0013] underline underline-offset-4 transition-opacity" href="models.html">NTORQ 125</a></li>
+                    <li><a class="hover:text-[#bb0013] underline underline-offset-4 transition-opacity" href="iqube.html">iQube Electric</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[#0a1e7b] font-bold mb-6 font-headline">Quick Links</h4>
+                <ul class="space-y-4 text-sm text-slate-500">
+                    <li><a class="hover:text-[#bb0013] underline underline-offset-4 transition-opacity" href="#">Privacy Policy</a></li>
+                    <li><a class="hover:text-[#bb0013] underline underline-offset-4 transition-opacity" href="#">Terms of Service</a></li>
+                    <li><a class="hover:text-[#bb0013] underline underline-offset-4 transition-opacity" href="locations.html">Dealer Locator</a></li>
+                    <li><a class="hover:text-[#bb0013] underline underline-offset-4 transition-opacity" href="about.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[#0a1e7b] font-bold mb-6 font-headline">Newsletter</h4>
+                <p class="text-slate-500 text-xs mb-4">Stay updated with the latest launches and offers from KNK TVS.</p>
+                <div class="flex">
+                    <input class="bg-surface-container-high border-none rounded-l-lg py-3 px-4 w-full text-sm" placeholder="Email Address" type="email"/>
+                    <button class="bg-primary text-white px-4 rounded-r-lg">
+                        <span class="material-symbols-outlined">send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-[1440px] mx-auto px-12 py-8 border-t border-slate-200">
+            <p class="text-center text-slate-500 text-xs">© 2024 KNK TVS Motor Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-2xl w-full max-w-lg overflow-hidden shadow-2xl relative">
+            <button class="absolute top-4 right-4 text-slate-400 hover:text-primary transition-colors" onclick="closeBookingModal()">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="p-8">
+                <h3 class="text-3xl font-headline font-black text-primary italic mb-2">Book a Test Ride</h3>
+                <p class="text-on-surface-variant font-body mb-6">Fill in the details and we'll get in touch with you shortly.</p>
+                
+                <form action="https://formspree.io/f/xvgrvjwv" method="POST" class="space-y-4">
+                    <input type="hidden" name="_to" value="jasperjeyanth@gmail.com">
+                    <div>
+                        <label class="block text-xs font-bold text-outline uppercase tracking-widest mb-2 px-1">Full Name</label>
+                        <input type="text" name="name" required class="w-full px-4 py-3 bg-surface-container-high border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Enter your full name">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-outline uppercase tracking-widest mb-2 px-1">Email Address</label>
+                            <input type="email" name="email" required class="w-full px-4 py-3 bg-surface-container-high border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all" placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-outline uppercase tracking-widest mb-2 px-1">Phone Number</label>
+                            <input type="tel" name="phone" required class="w-full px-4 py-3 bg-surface-container-high border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all" placeholder="+91 00000 00000">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-outline uppercase tracking-widest mb-2 px-1">Select Model</label>
+                        <select name="model" id="modelSelect" class="w-full px-4 py-3 bg-surface-container-high border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all">
+                            <option value="iQube">TVS iQube (Electric)</option>
+                            <option value="Apache RR 310">Apache RR 310</option>
+                            <option value="Jupiter 125">Jupiter 125</option>
+                            <option value="Ronin">TVS Ronin</option>
+                            <option value="Apache RTR 200">Apache RTR 200 4V</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-secondary text-white py-4 rounded-xl font-bold hover:bg-secondary-container transition-colors shadow-lg shadow-secondary/20 mt-6">
+                        Confirm Booking
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openBookingModal(model) {
+            if(model) {
+                document.getElementById('modelSelect').value = model;
+            }
+            document.getElementById('bookingModal').classList.remove('hidden');
+            document.body.classList.add('modal-active');
+        }
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.add('hidden');
+            document.body.classList.remove('modal-active');
+        }
+        window.onclick = function(event) {
+            let modal = document.getElementById('bookingModal');
+            if (event.target == modal) {
+                closeBookingModal();
+            }
+        }
+    </script>
+</body>
+</html>
