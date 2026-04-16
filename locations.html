@@ -74,10 +74,68 @@
     </nav>
 
     <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="bg-primary relative overflow-hidden">
+            <!-- Background decoration -->
+            <div class="absolute inset-0 opacity-5">
+                <div class="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-white blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                <div class="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-secondary blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+            </div>
+            <!-- Grid lines decoration -->
+            <div class="absolute inset-0 opacity-[0.04]" style="background-image: linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px); background-size: 60px 60px;"></div>
+
+            <div class="relative max-w-[1440px] mx-auto px-12 py-24 lg:py-32">
+                <div class="max-w-3xl">
+                    <span class="inline-flex items-center gap-2 text-secondary font-black text-xs tracking-[0.3em] uppercase mb-6">
+                        <span class="h-px w-8 bg-secondary inline-block"></span>
+                        Our Showrooms
+                    </span>
+                    <h1 class="text-6xl lg:text-7xl font-headline font-black text-white leading-tight tracking-tighter mb-6">
+                        Find a KNK TVS <br/>
+                        <span class="text-secondary italic">Near You.</span>
+                    </h1>
+                    <p class="text-white/60 text-lg leading-relaxed max-w-xl font-body">
+                        Two showrooms, one commitment — delivering the best of TVS's lineup with award-winning service. Visit us at either of our Kanchipuram locations.
+                    </p>
+                </div>
+
+                <!-- Stats row -->
+                <div class="mt-16 flex flex-wrap gap-12">
+                    <div class="border-l-2 border-secondary pl-6">
+                        <span class="block text-4xl font-headline font-black text-white">2</span>
+                        <span class="text-white/50 text-sm uppercase tracking-widest font-label">Showrooms</span>
+                    </div>
+                    <div class="border-l-2 border-secondary/40 pl-6">
+                        <span class="block text-4xl font-headline font-black text-white">3+</span>
+                        <span class="text-white/50 text-sm uppercase tracking-widest font-label">Years of Trust</span>
+                    </div>
+                    <div class="border-l-2 border-secondary/40 pl-6">
+                        <span class="block text-4xl font-headline font-black text-white">5k+</span>
+                        <span class="text-white/50 text-sm uppercase tracking-widest font-label">Happy Riders</span>
+                    </div>
+                    <div class="border-l-2 border-secondary/40 pl-6">
+                        <span class="block text-4xl font-headline font-black text-white">Kanchipuram</span>
+                        <span class="text-white/50 text-sm uppercase tracking-widest font-label">Tamil Nadu</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Locations List -->
         <section class="bg-surface-container-low py-24">
             <div class="max-w-[1440px] mx-auto px-12">
+                <!-- Section header -->
+                <div class="flex items-center gap-4 mb-12">
+                    <div>
+                        <p class="text-secondary font-black text-xs tracking-[0.3em] uppercase mb-1">Visit Us</p>
+                        <h2 class="text-4xl font-headline font-black text-primary tracking-tight">Our Locations</h2>
+                    </div>
+                    <div class="flex-1 h-px bg-outline-variant ml-4 hidden md:block"></div>
+                    <span class="hidden md:flex items-center gap-2 text-on-surface-variant text-sm font-medium bg-white rounded-full px-5 py-2 shadow-sm border border-outline-variant/20">
+                        <span class="material-symbols-outlined text-primary text-base">location_on</span>
+                        Kanchipuram, Tamil Nadu
+                    </span>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Location 1 -->
                     <div class="bg-white rounded-xl overflow-hidden shadow-none group">
