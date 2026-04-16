@@ -1,0 +1,104 @@
+/* Product Details Styles */
+
+:root {
+    --gallery-bg: #f8fafc;
+}
+
+/* Horizontal Carousel */
+.product-gallery-container {
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.product-carousel-track {
+    will-change: transform;
+}
+
+.product-carousel-slide {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-carousel-slide img {
+    max-width: 90%;
+    max-height: 70vh;
+    object-fit: contain;
+    filter: drop-shadow(0 30px 50px rgba(0,0,0,0.12));
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.product-carousel-slide:hover img {
+    transform: scale(1.05);
+}
+
+/* Color Swatches */
+.color-swatch {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    padding: 3px;
+    background-clip: content-box;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.color-swatch:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.color-swatch.active {
+    border-color: #0a1e7b;
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(10, 30, 123, 0.15);
+}
+
+/* Specs Grid */
+.spec-category-card {
+    background: #f8fafc;
+    border-radius: 2rem;
+    padding: 2rem;
+    border: 1px solid #f1f5f9;
+    transition: all 0.3s ease;
+}
+
+.spec-category-card:hover {
+    background: #ffffff;
+    border-color: #e2e8f0;
+    box-shadow: 0 20px 40px -15px rgba(0,0,0,0.05);
+}
+
+.spec-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.spec-row:last-child {
+    border-bottom: none;
+}
+
+.spec-label {
+    color: #64748b;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.spec-value {
+    color: #1e293b;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: right;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 1024px) {
+    .product-carousel-slide img {
+        max-width: 100%;
+        max-height: 40vh;
+    }
+}
