@@ -196,14 +196,8 @@
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-outline uppercase tracking-widest mb-2 px-1">Select Model</label>
-                        <select name="model" id="modelSelect" class="w-full px-4 py-3 bg-slate-100 border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all font-body">
-                            <option value="Ronin" selected>TVS Ronin</option>
-                            <option value="Apache RR 310">Apache RR 310</option>
-                            <option value="Apache RTR 310">Apache RTR 310</option>
-                            <option value="Apache RTR 200">Apache RTR 200 4V</option>
-                            <option value="Jupiter 125">Jupiter 125</option>
-                            <option value="TVS X">TVS X</option>
-                        </select>
+                        <input type="hidden" name="model" value="TVS Ronin">
+                        <input type="text" value="TVS Ronin" readonly class="w-full px-4 py-3 bg-slate-100 border-none rounded-xl font-body text-primary font-bold cursor-not-allowed opacity-80">
                     </div>
                     <button class="w-full bg-[#bb0013] text-white py-4 rounded-xl font-bold hover:bg-[#a00010] transition-colors shadow-lg shadow-red-900/10 mt-6" type="submit">
                         Confirm Booking
