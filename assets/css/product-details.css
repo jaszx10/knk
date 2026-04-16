@@ -95,10 +95,82 @@
     text-align: right;
 }
 
-/* Mobile Adjustments */
+/* ============================================================
+   Product Details — Responsive Media Queries
+   ============================================================ */
+
+/* ── Tablet: 768px – 1024px ─────────────────────────────── */
 @media (max-width: 1024px) {
     .product-carousel-slide img {
         max-width: 100%;
         max-height: 40vh;
+    }
+
+    /* Spec grid: 2 columns on tablet */
+    .spec-category-card {
+        padding: 1.5rem;
+    }
+}
+
+/* ── Mobile: ≤ 767px ────────────────────────────────────── */
+@media (max-width: 767px) {
+    /* Gallery container: remove fade mask on mobile (full-bleed) */
+    .product-gallery-container {
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    /* Slightly larger image on mobile for visibility */
+    .product-carousel-slide img {
+        max-width: 100%;
+        max-height: 50vw;
+        min-height: 160px;
+        filter: drop-shadow(0 15px 25px rgba(0,0,0,0.10));
+    }
+
+    /* Color swatches: bigger touch targets */
+    .color-swatch {
+        width: 3rem;
+        height: 3rem;
+        min-width: 44px;
+        min-height: 44px;
+        border-radius: 0.75rem;
+    }
+
+    /* Spec cards: comfortable single-column cards */
+    .spec-category-card {
+        padding: 1.25rem;
+        border-radius: 1.25rem;
+    }
+
+    .spec-row {
+        padding: 0.75rem 0;
+    }
+
+    .spec-label,
+    .spec-value {
+        font-size: 0.8125rem;
+    }
+
+    /* Gallery nav arrows: bigger touch targets */
+    .product-carousel-slide ~ div button,
+    [onclick="prevSlide()"],
+    [onclick="nextSlide()"] {
+        width: 44px !important;
+        height: 44px !important;
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+/* ── Small phones: ≤ 374px ──────────────────────────────── */
+@media (max-width: 374px) {
+    .product-carousel-slide img {
+        max-height: 45vw;
+    }
+
+    .color-swatch {
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }

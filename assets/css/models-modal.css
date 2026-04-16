@@ -264,3 +264,117 @@
 .close-models-modal .material-symbols-outlined {
     font-size: 1.5rem;
 }
+
+/* ============================================================
+   Models Modal — Mobile & Tablet Media Queries
+   ============================================================ */
+
+/* ── Tablet: 768px – 1023px ─────────────────────────────── */
+@media (max-width: 1023px) {
+    .models-modal-content {
+        flex-direction: column;
+        height: 92vh;
+        border-radius: 1.25rem;
+        max-width: 100%;
+        margin: 0 0.75rem;
+    }
+
+    /* Sidebar becomes a horizontal scrollable tab strip */
+    .models-modal-sidebar {
+        width: 100%;
+        min-width: unset;
+        flex-direction: row;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 0.75rem 1rem;
+        gap: 0.5rem;
+        border-right: none;
+        border-bottom: 1px solid var(--sidebar-border);
+        scrollbar-width: none; /* Firefox */
+    }
+    .models-modal-sidebar::-webkit-scrollbar { display: none; }
+
+    .models-category-btn {
+        white-space: nowrap;
+        padding: 0.6rem 1.25rem;
+        border-radius: 2rem;
+        font-size: 0.9rem;
+        min-height: 44px;
+        flex-shrink: 0;
+        justify-content: center;
+    }
+    .models-category-btn:hover {
+        padding-left: 1.25rem; /* override desktop hover shift */
+    }
+    .models-category-btn::before { display: none; } /* no left accent bar */
+
+    /* Grid area gets proper padding */
+    .models-grid-area {
+        padding: 1.5rem 1.25rem;
+        flex: 1;
+        overflow-y: auto;
+    }
+
+    .models-grid-header {
+        margin-bottom: 1.5rem;
+    }
+    .models-grid-header h2 {
+        font-size: 1.5rem;
+    }
+
+    /* 2-column grid on tablet */
+    .models-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    /* Close button repositioned */
+    .close-models-modal {
+        top: 1rem;
+        right: 1rem;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+/* ── Mobile: ≤ 639px ─────────────────────────────────────── */
+@media (max-width: 639px) {
+    .models-modal-overlay {
+        padding: 0;
+        align-items: flex-end;
+    }
+
+    .models-modal-content {
+        height: 90vh;
+        border-radius: 1.5rem 1.5rem 0 0;
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Single column on small phones */
+    .models-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+    }
+
+    .model-card-image-wrapper {
+        border-radius: 0.75rem;
+        padding: 0.75rem;
+    }
+
+    .model-card h4 {
+        font-size: 0.875rem;
+    }
+
+    .models-grid-area {
+        padding: 1rem;
+    }
+}
+
+/* ── Very small phones: ≤ 374px ──────────────────────────── */
+@media (max-width: 374px) {
+    .models-grid {
+        grid-template-columns: 1fr;
+    }
+}

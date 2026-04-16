@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/css/models-modal.css">
     <link rel="stylesheet" href="assets/css/product-details.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script id="tailwind-config">
         tailwind.config = {
@@ -56,23 +57,37 @@
             <div class="flex items-center gap-2">
                 <a href="index.html" class="text-2xl font-black text-[#0a1e7b] font-headline tracking-tight">KNK TVS</a>
             </div>
-            <div class="hidden md:flex items-center gap-8">
+            <div class="desktop-nav-links hidden md:flex items-center gap-8">
                 <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="index.html">Home</a>
                 <a class="text-[#bb0013] font-bold border-b-2 border-[#bb0013] pb-1 font-headline tracking-tight" href="#" onclick="openModelsModal(); return false;">Models</a>
                 <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="locations.html">Location</a>
                 <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="about.html">About Us</a>
             </div>
-            <div class="flex items-center gap-4">
-                <button onclick="openBookingModal()" class="bg-[#bb0013] text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-[#a00010] transition-all duration-300 shadow-lg shadow-red-900/10">Book Test Ride</button>
+            <div class="flex items-center gap-3">
+                <button onclick="openBookingModal()" class="desktop-nav-cta bg-[#bb0013] text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-[#a00010] transition-all duration-300 shadow-lg shadow-red-900/10 hidden md:inline-flex">Book Test Ride</button>
+                <button id="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Open menu" aria-expanded="false">
+                    <span id="hamburger-icon" class="material-symbols-outlined text-[#0a1e7b]" style="font-size:28px">menu</span>
+                </button>
             </div>
         </div>
     </nav>
 
+    <!-- Mobile Nav Menu -->
+    <div id="mobile-nav-menu" role="navigation" aria-label="Mobile menu">
+        <a class="mobile-nav-link" href="index.html">Home</a>
+        <a class="mobile-nav-link active" href="#" onclick="closeMobileMenu(); openModelsModal(); return false;">Models</a>
+        <a class="mobile-nav-link" href="locations.html">Location</a>
+        <a class="mobile-nav-link" href="about.html">About Us</a>
+        <div class="mobile-nav-cta">
+            <button onclick="closeMobileMenu(); openBookingModal();">Book Test Ride</button>
+        </div>
+    </div>
+
     <main class="pt-20">
         <!-- Hero Section -->
-        <section class="min-h-[calc(100vh-80px)] flex flex-col lg:flex-row">
+        <section class="ronin-hero min-h-[calc(100vh-80px)] flex flex-col lg:flex-row">
             <!-- Left: Gallery -->
-            <div class="w-full lg:w-3/5 bg-[#f8fafc] relative overflow-hidden flex items-center justify-center p-8 lg:p-16">
+            <div class="ronin-gallery-panel w-full lg:w-3/5 bg-[#f8fafc] relative overflow-hidden flex items-center justify-center p-8 lg:p-16">
                 <div class="product-gallery-container w-full max-w-4xl">
                     <div id="productCarousel" class="product-carousel-track flex transition-transform duration-700 cubic-bezier(0.65, 0, 0.35, 1)">
                         <!-- Images injected via JS -->
@@ -94,13 +109,13 @@
             </div>
 
             <!-- Right: Details -->
-            <div class="w-full lg:w-2/5 p-8 lg:p-16 flex flex-col justify-center">
+            <div class="ronin-details-panel w-full lg:w-2/5 p-8 lg:p-16 flex flex-col justify-center">
                 <div class="max-w-md mx-auto w-full">
                     <div class="flex items-center gap-2 mb-4">
                         <span class="h-px w-8 bg-[#bb0013]"></span>
                         <span class="text-[#bb0013] font-bold text-sm tracking-widest uppercase">The Unscripted Life</span>
                     </div>
-                    <h1 class="text-5xl lg:text-6xl font-black text-[#0a1e7b] font-headline mb-4 italic leading-tight">TVS RONIN</h1>
+                    <h1 class="text-4xl lg:text-6xl font-black text-[#0a1e7b] font-headline mb-4 italic leading-tight">TVS RONIN</h1>
                     <p class="text-slate-500 text-lg mb-8 leading-relaxed">Introducing the TVS Ronin—a bike that defies categories. Designed for the multi-faceted, the Ronin is your perfect partner for both urban commutes and unscripted weekends.</p>
 
                     <!-- Color Selector -->
@@ -113,7 +128,7 @@
                     </div>
 
                     <div class="flex flex-col gap-4">
-                        <button onclick="openBookingModal('Ronin')" class="w-full bg-[#bb0013] text-white py-5 rounded-2xl font-black text-lg hover:bg-[#a00010] transition-all transform hover:-translate-y-1 shadow-2xl shadow-red-900/20 flex items-center justify-center gap-2">
+                        <button onclick="openBookingModal('Ronin')" class="w-full bg-[#bb0013] text-white py-4 md:py-5 rounded-2xl font-black text-lg hover:bg-[#a00010] transition-all transform hover:-translate-y-1 shadow-2xl shadow-red-900/20 flex items-center justify-center gap-2 min-h-[56px]">
                             BOOK TEST RIDE
                             <span class="material-symbols-outlined">arrow_forward</span>
                         </button>
@@ -124,8 +139,8 @@
         </section>
 
         <!-- Technical Specifications Section -->
-        <section class="py-24 bg-white border-t border-slate-100">
-            <div class="max-w-[1440px] mx-auto px-8 lg:px-24">
+        <section class="ronin-spec-section py-12 md:py-24 bg-white border-t border-slate-100">
+            <div class="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-24">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-black text-primary italic font-headline mb-4">TECHNICAL SPECIFICATIONS</h2>
                     <div class="h-1.5 w-24 bg-secondary mx-auto rounded-full"></div>
@@ -139,8 +154,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[#0a1e7b] text-white py-16">
-        <div class="max-w-[1440px] mx-auto px-12">
+    <footer class="bg-[#0a1e7b] text-white py-12 md:py-16">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-12">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div class="col-span-1 md:col-span-2">
                     <div class="text-3xl font-black mb-6">KNK TVS</div>
@@ -223,10 +238,28 @@
         }
         window.addEventListener('click', function(event) {
             let modal = document.getElementById('bookingModal');
-            if (event.target == modal) {
-                closeBookingModal();
-            }
+            if (event.target == modal) closeBookingModal();
         });
+        /* Mobile Menu */
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-nav-menu');
+            const icon = document.getElementById('hamburger-icon');
+            const btn  = document.getElementById('hamburger-btn');
+            const open = menu.classList.toggle('open');
+            icon.textContent = open ? 'close' : 'menu';
+            btn.setAttribute('aria-expanded', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+        }
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobile-nav-menu');
+            const icon = document.getElementById('hamburger-icon');
+            const btn  = document.getElementById('hamburger-btn');
+            menu.classList.remove('open');
+            icon.textContent = 'menu';
+            btn.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('resize', () => { if (window.innerWidth >= 768) closeMobileMenu(); });
     </script>
     <script src="assets/js/models-modal.js"></script>
     <script src="assets/js/product-details.js"></script>

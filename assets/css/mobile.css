@@ -1,0 +1,459 @@
+/* ============================================================
+   KNK TVS — Mobile Responsive Styles
+   Breakpoints:
+     xs  : 375px  (small phones)
+     sm  : 640px  (large phones / landscape)
+     md  : 768px  (tablets)
+     lg  : 1024px (small desktops)
+     xl  : 1440px (wide desktops)
+   ============================================================ */
+
+/* ── 1. HAMBURGER MENU ──────────────────────────────────────── */
+#hamburger-btn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: #0a1e7b;
+    transition: background 0.2s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#hamburger-btn:hover {
+    background: rgba(10, 30, 123, 0.06);
+}
+
+#mobile-nav-menu {
+    display: none;
+    position: fixed;
+    top: 80px;           /* height of nav */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 49;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    flex-direction: column;
+    padding: 2rem 1.5rem 3rem;
+    gap: 0;
+    overflow-y: auto;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity   0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#mobile-nav-menu.open {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.mobile-nav-link {
+    display: flex;
+    align-items: center;
+    min-height: 56px;
+    padding: 0 1rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #1e293b;
+    text-decoration: none;
+    border-bottom: 1px solid #f1f5f9;
+    transition: color 0.2s, background 0.2s;
+    border-radius: 0.5rem;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+    color: #bb0013;
+    background: #fff5f5;
+}
+
+.mobile-nav-cta {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-nav-cta button {
+    width: 100%;
+    min-height: 56px;
+    background: #0a1e7b;
+    color: #fff;
+    border: none;
+    border-radius: 0.75rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.mobile-nav-cta button:hover {
+    background: #bb0013;
+}
+
+
+/* ── 2. GLOBAL TOUCH TARGETS ────────────────────────────────── */
+@media (max-width: 767px) {
+    /* All buttons & anchors acting as buttons */
+    button,
+    a[role="button"],
+    .models-category-btn,
+    .close-models-modal,
+    .color-swatch {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Nav bar height consistent */
+    nav .h-20 {
+        height: 64px !important;
+    }
+
+    /* Reduce nav container padding */
+    nav > div {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    /* Hide desktop nav links */
+    .desktop-nav-links {
+        display: none !important;
+    }
+
+    /* Hide desktop CTA in nav */
+    .desktop-nav-cta {
+        display: none !important;
+    }
+
+    /* Show hamburger */
+    #hamburger-btn {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Ensure mobile menu never shows on desktop */
+    #hamburger-btn {
+        display: none !important;
+    }
+
+    #mobile-nav-menu {
+        display: none !important;
+    }
+}
+
+
+/* ── 3. INDEX PAGE — ADBOARD (hero carousel) ────────────────── */
+@media (max-width: 767px) {
+    /* Switch from wide-screen banner ratio to phone-friendly 9:16-ish */
+    .adboard-container {
+        aspect-ratio: 375 / 280 !important;
+    }
+
+    /* Make adboard images cover properly on mobile */
+    .adboard-slide img {
+        object-fit: cover !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    /* Relocate nav controls */
+    #adboardDots {
+        bottom: 16px !important;
+        gap: 8px !important;
+    }
+
+    /* Hide up/down nav arrows on mobile (swipe instead) */
+    .adboard-nav-arrows {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .adboard-container {
+        aspect-ratio: 16 / 7 !important;
+    }
+}
+
+
+/* ── 4. INDEX PAGE — FEATURED MODELS SECTION ────────────────── */
+@media (max-width: 767px) {
+    /* Section padding */
+    .featured-models-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    /* Header row: stack headline + View All link */
+    .featured-models-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.75rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .featured-models-header h2 {
+        font-size: 2.25rem !important;
+    }
+
+    /* Apache RR 310 big card — shrink internal spacing */
+    .apache-card {
+        padding: 1.5rem !important;
+    }
+
+    .apache-card h3 {
+        font-size: 2.5rem !important;
+    }
+
+    /* Make the motorcycle image sit below text, not overflow */
+    .apache-card > img,
+    .apache-card .bike-img {
+        position: relative !important;
+        bottom: auto !important;
+        right: auto !important;
+        width: 100% !important;
+        margin-top: 1.5rem !important;
+    }
+
+    /* Jupiter card button touch target */
+    .jupiter-card button {
+        min-height: 52px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .featured-models-header h2 {
+        font-size: 3rem !important;
+    }
+}
+
+
+/* ── 5. FOOTER ─────────────────────────────────────────────── */
+@media (max-width: 767px) {
+    footer > div:first-child {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        padding-top: 2.5rem !important;
+        padding-bottom: 1rem !important;
+        gap: 2rem !important;
+    }
+
+    footer .max-w-\[1440px\]:last-child {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+
+/* ── 6. ABOUT PAGE ──────────────────────────────────────────── */
+@media (max-width: 767px) {
+    /* Hero section */
+    .about-hero {
+        padding: 2rem 1rem !important;
+        min-height: auto !important;
+    }
+
+    .about-hero h1 {
+        font-size: 3rem !important;
+    }
+
+    /* The hero image */
+    .about-hero-img {
+        transform: none !important;
+        translate: none !important;
+        margin-top: 2rem !important;
+        border-radius: 0.75rem !important;
+    }
+
+    /* Vision & Legacy section */
+    .vision-section {
+        padding: 2.5rem 1rem !important;
+    }
+
+    .vision-card {
+        padding: 1.5rem !important;
+    }
+
+    .vision-stats {
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+        margin-top: 2rem !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .about-hero h1 {
+        font-size: 5rem !important;
+    }
+}
+
+
+/* ── 7. LOCATIONS PAGE ──────────────────────────────────────── */
+@media (max-width: 767px) {
+    /* Hero with primary background */
+    .locations-hero {
+        padding: 2rem 1rem !important;
+    }
+
+    .locations-hero h1 {
+        font-size: 2.75rem !important;
+        line-height: 1.15 !important;
+    }
+
+    /* Stats row wraps nicely */
+    .locations-stats-row {
+        gap: 1.5rem !important;
+        margin-top: 2rem !important;
+        flex-wrap: wrap !important;
+    }
+
+    /* Section header adjust */
+    .locations-section-header {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    /* Location card actions - stack buttons */
+    .location-card-actions {
+        flex-direction: column !important;
+        gap: 0.75rem !important;
+    }
+
+    .location-card-actions a,
+    .location-card-actions button {
+        width: 100% !important;
+        min-height: 52px !important;
+        aspect-ratio: unset !important;
+        border-radius: 0.75rem !important;
+        justify-content: center !important;
+    }
+
+    /* Grid section padding */
+    .locations-grid-section {
+        padding: 2.5rem 1rem !important;
+    }
+
+    /* Location images: full width */
+    .location-card-img-wrapper {
+        height: 220px !important;
+    }
+    .location-card-img-wrapper img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .locations-hero h1 {
+        font-size: 4rem !important;
+    }
+
+    .locations-grid-section {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+}
+
+
+/* ── 8. RONIN PAGE ──────────────────────────────────────────── */
+@media (max-width: 767px) {
+    /* Hero: stack gallery on top of details */
+    .ronin-hero {
+        flex-direction: column !important;
+        min-height: auto !important;
+    }
+
+    /* Gallery panel: full width and shorter height on mobile */
+    .ronin-gallery-panel {
+        width: 100% !important;
+        padding: 1.5rem 1rem 3.5rem !important;
+        min-height: 280px !important;
+    }
+
+    /* Details panel */
+    .ronin-details-panel {
+        width: 100% !important;
+        padding: 2rem 1rem !important;
+    }
+
+    .ronin-details-panel h1 {
+        font-size: 3rem !important;
+    }
+
+    /* Spec grid: single column on mobile */
+    .ronin-spec-section {
+        padding: 2rem 1rem !important;
+    }
+
+    #specsGrid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Gallery controls */
+    .ronin-gallery-panel .absolute.bottom-12 {
+        bottom: 0.75rem !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Spec grid: 2 cols on tablet */
+    #specsGrid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+
+/* ── 9. BOOKING/MODELS MODAL ────────────────────────────────── */
+@media (max-width: 767px) {
+    /* Booking modal — comfortable mobile sheet */
+    #bookingModal > div {
+        border-radius: 1.25rem !important;
+        max-height: 92vh !important;
+        overflow-y: auto !important;
+    }
+
+    #bookingModal > div > div {
+        padding: 1.5rem !important;
+    }
+
+    /* Form 2-col grid → 1 col on mobile */
+    #bookingModal .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Confirm button touch target */
+    #bookingModal button[type="submit"] {
+        min-height: 52px !important;
+    }
+}
+
+
+/* ── 10. IMAGES — global responsive images ──────────────────── */
+@media (max-width: 767px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/* ── 11. SWIPE SUPPORT — adboard ────────────────────────────── */
+/* Touch event JS handles swipe; these prevent text-select during swipe */
+.adboard-container {
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: pan-y pinch-zoom;
+}

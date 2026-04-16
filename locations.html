@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/css/models-modal.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script id="tailwind-config">
         tailwind.config = {
@@ -59,19 +60,33 @@
             <div class="flex items-center gap-2">
                 <a href="index.html" class="text-2xl font-black text-[#0a1e7b] font-headline tracking-tight">KNK TVS</a>
             </div>
-            <div class="hidden md:flex items-center gap-8">
+            <div class="desktop-nav-links hidden md:flex items-center gap-8">
                 <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="index.html">Home</a>
                 <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="models.html">Models</a>
                 <a class="text-[#bb0013] font-bold border-b-2 border-[#bb0013] pb-1 font-headline tracking-tight" href="locations.html">Location</a>
                 <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="about.html">About Us</a>
             </div>
-            <div class="flex items-center gap-4">
-                <button class="bg-primary text-white px-4 py-2 rounded-lg font-bold text-sm hover:bg-secondary transition-colors" onclick="openBookingModal()">
+            <div class="flex items-center gap-3">
+                <button class="desktop-nav-cta bg-primary text-white px-4 py-2 rounded-lg font-bold text-sm hover:bg-secondary transition-colors hidden md:inline-flex" onclick="openBookingModal()">
                     Book Test Ride
+                </button>
+                <button id="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Open menu" aria-expanded="false">
+                    <span id="hamburger-icon" class="material-symbols-outlined text-[#0a1e7b]" style="font-size:28px">menu</span>
                 </button>
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobile-nav-menu" role="navigation" aria-label="Mobile menu">
+        <a class="mobile-nav-link" href="index.html">Home</a>
+        <a class="mobile-nav-link" href="models.html">Models</a>
+        <a class="mobile-nav-link active" href="locations.html">Location</a>
+        <a class="mobile-nav-link" href="about.html">About Us</a>
+        <div class="mobile-nav-cta">
+            <button onclick="closeMobileMenu(); openBookingModal();">Book Test Ride</button>
+        </div>
+    </div>
 
     <main class="pt-20">
         <!-- Hero Section -->
@@ -84,13 +99,13 @@
             <!-- Grid lines decoration -->
             <div class="absolute inset-0 opacity-[0.04]" style="background-image: linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px); background-size: 60px 60px;"></div>
 
-            <div class="relative max-w-[1440px] mx-auto px-12 py-24 lg:py-32">
+            <div class="locations-hero relative max-w-[1440px] mx-auto px-4 md:px-12 py-16 md:py-24 lg:py-32">
                 <div class="max-w-3xl">
                     <span class="inline-flex items-center gap-2 text-secondary font-black text-xs tracking-[0.3em] uppercase mb-6">
                         <span class="h-px w-8 bg-secondary inline-block"></span>
                         Our Showrooms
                     </span>
-                    <h1 class="text-6xl lg:text-7xl font-headline font-black text-white leading-tight tracking-tighter mb-6">
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-headline font-black text-white leading-tight tracking-tighter mb-6">
                         Find a KNK TVS <br/>
                         <span class="text-secondary italic">Near You.</span>
                     </h1>
@@ -100,7 +115,7 @@
                 </div>
 
                 <!-- Stats row -->
-                <div class="mt-16 flex flex-wrap gap-12">
+                <div class="locations-stats-row mt-8 md:mt-16 flex flex-wrap gap-6 md:gap-12">
                     <div class="border-l-2 border-secondary pl-6">
                         <span class="block text-4xl font-headline font-black text-white">2</span>
                         <span class="text-white/50 text-sm uppercase tracking-widest font-label">Showrooms</span>
@@ -122,8 +137,8 @@
         </section>
 
         <!-- Locations List -->
-        <section class="bg-surface-container-low py-24">
-            <div class="max-w-[1440px] mx-auto px-12">
+        <section class="locations-grid-section bg-surface-container-low py-12 md:py-24">
+            <div class="max-w-[1440px] mx-auto px-4 md:px-12">
                 <!-- Section header -->
                 <div class="flex items-center gap-4 mb-12">
                     <div>
@@ -139,19 +154,19 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Location 1 -->
                     <div class="bg-white rounded-xl overflow-hidden shadow-none group">
-                        <div class="h-48 overflow-hidden">
-                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/Screenshot 2026-04-16 172141.png"/>
+                        <div class="location-card-img-wrapper h-48 overflow-hidden">
+                            <img loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/Screenshot 2026-04-16 172141.png"/>
                         </div>
-                        <div class="p-8">
+                        <div class="p-6 md:p-8">
                             <span class="text-secondary font-black text-xs tracking-widest uppercase mb-2 block">Flagship Store</span>
                             <h3 class="text-2xl font-black text-primary mb-4">KNK TVS</h3>
                             <div class="space-y-3 text-on-surface-variant text-sm font-medium">
                                 <p class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-lg">location_on</span> Toll Gate, NO.52 K S, Murugesa Mudaliar Nagar, SBI Colony, Kanchipuram, Tamil Nadu 631501</p>
-                                <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">call</span> 7305996053</p>
+                                <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">call</span> <a href="tel:7305996053" class="hover:text-primary transition-colors">7305996053</a></p>
                             </div>
-                            <div class="mt-8 flex gap-4">
-                                <a href="https://www.google.com/maps/place/KNK+TVS/@12.8188529,79.7259841,16.95z/data=!4m6!3m5!1s0x3a52c34cad307743:0x5fdd7f838050a144!8m2!3d12.8184091!4d79.7293925!16s%2Fg%2F11k3m98ckt?entry=ttu&g_ep=EgoyMDI2MDQxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="flex-1 bg-surface-container-high text-primary py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition-all text-center flex items-center justify-center">GET DIRECTIONS</a>
-                                <button class="aspect-square bg-secondary text-white rounded-lg px-2 flex items-center justify-center hover:scale-95 duration-200" onclick="openBookingModal('General Query')">
+                            <div class="location-card-actions mt-6 md:mt-8 flex gap-4">
+                                <a href="https://www.google.com/maps/place/KNK+TVS/@12.8188529,79.7259841,16.95z/data=!4m6!3m5!1s0x3a52c34cad307743:0x5fdd7f838050a144!8m2!3d12.8184091!4d79.7293925!16s%2Fg%2F11k3m98ckt?entry=ttu&g_ep=EgoyMDI2MDQxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="flex-1 bg-surface-container-high text-primary py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition-all text-center flex items-center justify-center min-h-[44px]">GET DIRECTIONS</a>
+                                <button class="aspect-square bg-secondary text-white rounded-lg px-2 flex items-center justify-center hover:scale-95 duration-200 min-w-[44px] min-h-[44px]" onclick="openBookingModal('General Query')">
                                     <span class="material-symbols-outlined">calendar_today</span>
                                 </button>
                             </div>
@@ -159,18 +174,18 @@
                     </div>
                     <!-- Location 2 -->
                     <div class="bg-white rounded-xl overflow-hidden shadow-none group">
-                        <div class="h-48 overflow-hidden">
-                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/knk_tvs_location_2.png"/>
+                        <div class="location-card-img-wrapper h-48 overflow-hidden">
+                            <img loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="assets/images/knk_tvs_location_2.png"/>
                         </div>
-                        <div class="p-8">
+                        <div class="p-6 md:p-8">
                             <h3 class="text-2xl font-black text-primary mb-4">KNK TVS</h3>
                             <div class="space-y-3 text-on-surface-variant text-sm font-medium">
-                                <p class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-lg">location_on</span> 128 & 129, Gandhi Rd, Ennaikaran, Kanchipuram, Tamil Nadu 631501</p>
-                                <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">call</span> +91 7305996083</p>
+                                <p class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-lg">location_on</span> 128 &amp; 129, Gandhi Rd, Ennaikaran, Kanchipuram, Tamil Nadu 631501</p>
+                                <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">call</span> <a href="tel:+917305996083" class="hover:text-primary transition-colors">+91 7305996083</a></p>
                             </div>
-                            <div class="mt-8 flex gap-4">
-                                <a href="https://www.google.com/maps/place/KNK+TVS/@12.8293277,79.7061162,17z/data=!4m6!3m5!1s0x3a52c3a7e012ded5:0xce46ca7ba8208e50!8m2!3d12.8292165!4d79.7060673!16s%2Fg%2F11k3m95pf0?entry=ttu&g_ep=EgoyMDI2MDQxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="flex-1 bg-surface-container-high text-primary py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition-all text-center flex items-center justify-center">GET DIRECTIONS</a>
-                                <button class="aspect-square bg-secondary text-white rounded-lg px-2 flex items-center justify-center hover:scale-95 duration-200" onclick="openBookingModal('General Query')">
+                            <div class="location-card-actions mt-6 md:mt-8 flex gap-4">
+                                <a href="https://www.google.com/maps/place/KNK+TVS/@12.8293277,79.7061162,17z/data=!4m6!3m5!1s0x3a52c3a7e012ded5:0xce46ca7ba8208e50!8m2!3d12.8292165!4d79.7060673!16s%2Fg%2F11k3m95pf0?entry=ttu&g_ep=EgoyMDI2MDQxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="flex-1 bg-surface-container-high text-primary py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition-all text-center flex items-center justify-center min-h-[44px]">GET DIRECTIONS</a>
+                                <button class="aspect-square bg-secondary text-white rounded-lg px-2 flex items-center justify-center hover:scale-95 duration-200 min-w-[44px] min-h-[44px]" onclick="openBookingModal('General Query')">
                                     <span class="material-symbols-outlined">calendar_today</span>
                                 </button>
                             </div>
@@ -183,7 +198,7 @@
 
     <!-- Footer -->
     <footer class="bg-slate-50 border-t">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-[1440px] mx-auto px-12 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-[1440px] mx-auto px-4 md:px-12 py-10 md:py-16">
             <div class="space-y-6">
                 <span class="text-xl font-bold text-[#0a1e7b] font-headline">KNK TVS</span>
                 <p class="text-slate-500 text-sm font-body leading-relaxed">Pioneering the future of two-wheelers through engineering excellence and a commitment to sustainable performance.</p>
@@ -289,9 +304,7 @@
 
     <script>
         function openBookingModal(model) {
-            if(model) {
-                document.getElementById('modelSelect').value = model;
-            }
+            if(model) document.getElementById('modelSelect').value = model;
             document.getElementById('bookingModal').classList.remove('hidden');
             document.body.classList.add('modal-active');
         }
@@ -301,10 +314,28 @@
         }
         window.onclick = function(event) {
             let modal = document.getElementById('bookingModal');
-            if (event.target == modal) {
-                closeBookingModal();
-            }
+            if (event.target == modal) closeBookingModal();
         }
+        /* Mobile Menu */
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-nav-menu');
+            const icon = document.getElementById('hamburger-icon');
+            const btn  = document.getElementById('hamburger-btn');
+            const open = menu.classList.toggle('open');
+            icon.textContent = open ? 'close' : 'menu';
+            btn.setAttribute('aria-expanded', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+        }
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobile-nav-menu');
+            const icon = document.getElementById('hamburger-icon');
+            const btn  = document.getElementById('hamburger-btn');
+            menu.classList.remove('open');
+            icon.textContent = 'menu';
+            btn.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('resize', () => { if (window.innerWidth >= 768) closeMobileMenu(); });
     </script>
     <script src="assets/js/models-modal.js"></script>
 </body>
