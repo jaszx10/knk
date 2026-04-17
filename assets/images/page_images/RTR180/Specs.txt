@@ -1,0 +1,157 @@
+Engine Features
+Engine Technology
+SI, 4 stroke, Oil cooled, Fuel Injection
+SI, 4 stroke, Oil cooled, Fuel Injection
+Engine Layout
+Cylinder Engine
+Cylinder Engine
+Number of Cylinders
+1
+1
+Transmission Type
+5-speed
+5-speed
+Bore X Stroke
+62 mm X 57.8 mm
+62 mm X 57.8 mm
+Engine Capacity
+177.4 cc
+177.4 cc
+Ignition System
+Self
+Self
+Compression Ratio
+10
+10
+Maximum Power
+16.8 bhp (at 9000 RPM)
+16.8 bhp (at 9000 RPM)
+Maximum Torque
+15.5 Nm (at 7000 RPM)
+15.5 Nm (at 7000 RPM)
+Clutch Type
+Wet type, multi-plate
+Wet type, multi-plate
+Fuel Supply
+Fuel Injection
+Fuel Injection
+Reverse Gear
+No
+No
+Engine Cooling System
+Oil Cooled
+Oil Cooled
+Chassis Features
+Frame Type
+Double cradle Synchro Stiff
+Double cradle Synchro Stiff
+Display Meters
+Console Features
+Speedometer LCD
+Speedometer LCD
+General
+Brand
+TVS
+TVS
+Model Name
+Apache RTR 180 (RM Disc BT)
+Apache RTR 180 (RM Disc BT)
+Model Year
+2025
+2025
+Model Version
+RM Disc BT
+RM Disc BT
+Brand Color
+Pearl White
+Pearl White
+Segment
+Sport
+Sport
+Color
+White
+White
+Maximum Speed
+113 kmph
+113 kmph
+Booking Type
+Booking for Ex-Showroom Price
+Booking for Ex-Showroom Price
+State
+Pan India
+Pan India
+Suspension
+Suspension (Front)
+Telescopic
+Telescopic
+Suspension (Rear)
+Mono Tube Inverted Gas
+Mono Tube Inverted Gas
+Dimensions
+Length
+2085 mm
+2085 mm
+Width
+730 mm
+730 mm
+Height
+1105 mm
+1105 mm
+Wheelbase
+1326 mm
+1326 mm
+Ground Clearance
+180 mm
+180 mm
+Seat Height
+790 mm
+790 mm
+Kerb Weight
+140 kg
+140 kg
+Wheel and Tire Features
+Tire Type
+Tubeless
+Tubeless
+Wheel Type
+Alloy Wheels
+Alloy Wheels
+Tire Size (Front)
+90/90-17
+90/90-17
+Tire Size (Rear)
+120/70-17
+120/70-17
+Brake Features
+ABS
+Yes
+Yes
+ABS Type
+Single Channel
+Single Channel
+Brake (Front)
+Disc
+Disc
+Brake (Rear)
+Disc
+Disc
+Disc Size (Front)
+270 mm
+270 mm
+Disc Size (Rear)
+200 mm
+200 mm
+Electricals
+Head Lamp
+LED
+LED
+Battery
+12 V
+12 V
+Tail Lamp
+LED
+LED
+Fuel Tank
+Fuel Tank Capacity
+12 L
+12 L

@@ -1,0 +1,173 @@
+Engine Features
+Engine Technology
+Eco thrust Fuel injection, Air cooled
+Eco thrust Fuel injection, Air cooled
+Engine Layout
+Cylinder Engine
+Cylinder Engine
+Number of Cylinders
+1
+1
+Transmission Type
+4-speed
+4-speed
+Bore X Stroke
+53.5 mm X 48.8 mm
+53.5 mm X 48.8 mm
+Engine Capacity
+109.7 cc
+109.7 cc
+Ignition System
+Self & Kick
+Self & Kick
+Compression Ratio
+10.0:1
+10.0:1
+Maximum Power
+8.18 bhp (at 7350 RPM)
+8.18 bhp (at 7350 RPM)
+Maximum Torque
+8.7 Nm (at 4500 RPM)
+8.7 Nm (at 4500 RPM)
+Clutch Type
+Wet multi plate
+Wet multi plate
+Fuel Supply
+Fuel Injection
+Fuel Injection
+Reverse Gear
+No
+No
+Engine Cooling System
+Air Cooled
+Air Cooled
+Transmission Features
+4 speed constant mesh
+4 speed constant mesh
+Fuel Supply Sub Type
+Fuel injection
+Fuel injection
+Display Meters
+Console Features
+Speedometer: Analogue Odometer: Digital
+Speedometer: Analogue Odometer: Digital
+Suspension
+Suspension (Front)
+Telescopic Oil-Damped
+Telescopic Oil-Damped
+Suspension (Rear)
+Hydraulic Shock Absorber
+Hydraulic Shock Absorber
+Dimensions
+Length
+2025 mm
+2025 mm
+Width
+705 mm
+705 mm
+Height
+1080 mm
+1080 mm
+Wheelbase
+1265 mm
+1265 mm
+Ground Clearance
+180 mm
+180 mm
+Seat Height
+780 mm
+780 mm
+Kerb Weight
+113 kg
+113 kg
+Dry Weight
+183 kg
+183 kg
+Brake Features
+ABS
+No
+No
+Brake (Front)
+Drum
+Drum
+Brake (Rear)
+Drum
+Drum
+Disc Size (Front)
+130 mm
+130 mm
+Disc Size (Rear)
+110 mm
+110 mm
+Electricals
+Head Lamp
+LED
+LED
+Battery
+12 V
+12 V
+Tail Lamp
+Bulb
+Bulb
+Sales Package
+ 
+Service Manual
+Service Manual
+Chassis Features
+Frame Type
+Single Cradle Tubular
+Single Cradle Tubular
+General
+Brand
+TVS
+TVS
+Model Name
+Radeon (Base Edition)
+Radeon (Base Edition)
+Model Year
+2025
+2025
+Model Version
+Base Edition
+Base Edition
+Brand Color
+Titanium Grey
+Titanium Grey
+Segment
+Standard
+Standard
+Color
+Grey
+Grey
+Maximum Speed
+90 kmph
+90 kmph
+Engine Oil Capacity
+1 L
+1 L
+Booking Type
+Booking for Ex-Showroom Price
+Booking for Ex-Showroom Price
+State
+Pan India
+Pan India
+Wheel and Tire Features
+Tire Type
+Tubeless
+Tubeless
+Wheel Type
+Alloy Wheels
+Alloy Wheels
+Tire Size (Front)
+2.75 - 18 42P 4PR
+2.75 - 18 42P 4PR
+Tire Size (Rear)
+3.00 - 18 52P 6PR
+3.00 - 18 52P 6PR
+Fuel Tank
+Fuel Tank Capacity
+10 L
+10 L
+Reserve Tank Capacity
+2 L
+2 L

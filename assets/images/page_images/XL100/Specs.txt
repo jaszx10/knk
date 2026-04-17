@@ -1,0 +1,117 @@
+Engine Features
+Engine Type
+Four-Stroke
+Four-Stroke
+Engine Capacity
+99.7 cc
+99.7 cc
+Engine Cooling System
+Air Cooled
+Air Cooled
+Transmission Type
+Single Speed
+Single Speed
+Number of Gears
+Non Gear
+Non Gear
+Ignition System
+Self & Kick
+Self & Kick
+Maximum Horse Power
+4.3 bhp @ 6000rpm
+4.3 bhp @ 6000rpm
+Maximum Torque
+6.5 Nm @ 3500 rpm
+6.5 Nm @ 3500 rpm
+Clutch Type
+Centrifugal type Wet Clutch
+Centrifugal type Wet Clutch
+Fuel Supply
+Carburettor
+Carburettor
+Number of Cylinders
+1
+1
+Chassis Features
+Front Brake
+Drum
+Drum
+Rear Brake
+Drum
+Drum
+Suspension Rear
+Swing Arm with Hydraulic Shocks
+Swing Arm with Hydraulic Shocks
+Front Suspension
+Telescopic Hydraulic Spring Type
+Telescopic Hydraulic Spring Type
+General
+Brand
+TVS
+TVS
+Model Name
+XL100
+XL100
+Model Year
+2026
+2026
+Model Version
+Heavy Duty i-Touch Start
+Heavy Duty i-Touch Start
+Type
+Moped
+Moped
+Brand Color
+Red
+Red
+Color
+Red
+Red
+Fuel Tank Capacity
+4 L
+4 L
+Console Features
+Analog
+Analog
+RTO Registration and Driving License
+Yes
+Yes
+State
+Pan India
+Pan India
+Booking Type
+Booking for Ex-Showroom Price
+Booking for Ex-Showroom Price
+Dimensions
+Length
+1895 mm
+1895 mm
+Width
+670 mm
+670 mm
+Height
+1077 mm
+1077 mm
+Kerb Weight
+89 kg
+89 kg
+Wheel and Tire Features
+Tire Type
+Tubed
+Tubed
+Front Tire Size
+2.50-16 - 6 PR 41L
+2.50-16 - 6 PR 41L
+Rear Tire Size
+2.50-16 - 6 PR 41L
+2.50-16 - 6 PR 41L
+Wheel Type
+Steel Wheels
+Steel Wheels
+Electricals
+Head Lamp
+LED Lamp
+LED Lamp
+Battery
+12 V
+12 V

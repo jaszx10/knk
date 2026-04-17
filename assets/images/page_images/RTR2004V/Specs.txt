@@ -1,0 +1,160 @@
+Engine Features
+Engine Technology
+SI, 4 stroke, Oil cooled, Fuel Injection
+SI, 4 stroke, Oil cooled, Fuel Injection
+Engine Layout
+Cylinder Engine
+Cylinder Engine
+Number of Cylinders
+1
+1
+Transmission Type
+5-speed
+5-speed
+Bore X Stroke
+66 mm X 57.8 mm
+66 mm X 57.8 mm
+Engine Capacity
+200 cc
+200 cc
+Ignition System
+Self
+Self
+Compression Ratio
+10
+10
+Maximum Power
+20.5 bhp (at 9000 RPM)
+20.5 bhp (at 9000 RPM)
+Maximum Torque
+17.25 Nm (at 7250 RPM)
+17.25 Nm (at 7250 RPM)
+Clutch Type
+Wet type, multi-plate
+Wet type, multi-plate
+Fuel Supply
+Fuel Injection
+Fuel Injection
+Reverse Gear
+No
+No
+Engine Cooling System
+Oil Cooled
+Oil Cooled
+Chassis Features
+Frame Type
+Double Cradle Split Synchro Stiff
+Double Cradle Split Synchro Stiff
+Display Meters
+Console Features
+Speedometer LCD
+Speedometer LCD
+General
+Brand
+TVS
+TVS
+Model Name
+Apache RTR 200 4V (RM Dual Channel ABS)
+Apache RTR 200 4V (RM Dual Channel ABS)
+Model Year
+2025
+2025
+Model Version
+RM Dual Channel ABS
+RM Dual Channel ABS
+Brand Color
+Pearl White
+Pearl White
+Segment
+Sport
+Sport
+Color
+White
+White
+Maximum Speed
+127 kmph
+127 kmph
+Booking Type
+Booking for Ex-Showroom Price
+Booking for Ex-Showroom Price
+State
+Pan India
+Pan India
+Suspension
+Suspension (Front)
+Telescopic
+Telescopic
+Suspension (Rear)
+Monoshock
+Monoshock
+Dimensions
+Length
+2050 mm
+2050 mm
+Width
+790 mm
+790 mm
+Height
+1050 mm
+1050 mm
+Wheelbase
+1353 mm
+1353 mm
+Ground Clearance
+180 mm
+180 mm
+Seat Height
+800 mm
+800 mm
+Kerb Weight
+152 kg
+152 kg
+Wheel and Tire Features
+Tire Type
+Tubeless
+Tubeless
+Wheel Type
+Alloy Wheels
+Alloy Wheels
+Tire Size (Front)
+90/90-17
+90/90-17
+Tire Size (Rear)
+130/70-R17
+130/70-R17
+Tire Features
+Radial
+Radial
+Brake Features
+ABS
+Yes
+Yes
+ABS Type
+Dual Channel
+Dual Channel
+Brake (Front)
+Disc
+Disc
+Brake (Rear)
+Disc
+Disc
+Disc Size (Front)
+270 mm
+270 mm
+Disc Size (Rear)
+240 mm
+240 mm
+Electricals
+Head Lamp
+LED with DRL
+LED with DRL
+Battery
+12 V
+12 V
+Tail Lamp
+LED
+LED
+Fuel Tank
+Fuel Tank Capacity
+12 L
+12 L

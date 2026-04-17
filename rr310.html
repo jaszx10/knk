@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>TVS Apache RR 310 - KNK TVS</title>
+    <meta name="description" content="Explore the TVS Apache RR 310 — India's track-focused supersport. Book a test ride at KNK TVS dealership today."/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/models-modal.css">
+    <link rel="stylesheet" href="assets/css/product-details.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#0a1e7b",
+                        "secondary": "#bb0013",
+                        "primary-container": "#283891",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface": "#ffffff",
+                        "on-surface": "#1a1c1c",
+                        "on-surface-variant": "#454652",
+                        "surface-container-high": "#f1f5f9",
+                        "surface-container-low": "#f8fafc",
+                        "outline": "#767683",
+                        "outline-variant": "#e2e8f0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/20">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-lg border-b border-slate-100">
+        <div class="flex justify-between items-center max-w-[1440px] mx-auto px-12 h-20">
+            <div class="flex items-center gap-2">
+                <a href="index.html" class="text-2xl font-black text-[#0a1e7b] font-headline tracking-tight">KNK TVS</a>
+            </div>
+            <div class="desktop-nav-links hidden md:flex items-center gap-8">
+                <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="index.html">Home</a>
+                <a class="text-[#bb0013] font-bold border-b-2 border-[#bb0013] pb-1 font-headline tracking-tight" href="#" onclick="openModelsModal(); return false;">Models</a>
+                <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="locations.html">Location</a>
+                <a class="text-slate-600 font-medium hover:text-[#bb0013] transition-colors duration-300 font-headline tracking-tight" href="about.html">About Us</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <button onclick="openBookingModal()" class="desktop-nav-cta bg-[#bb0013] text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-[#a00010] transition-all duration-300 shadow-lg shadow-red-900/10 hidden md:inline-flex">Book Test Ride</button>
+                <button id="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Open menu" aria-expanded="false">
+                    <span id="hamburger-icon" class="material-symbols-outlined text-[#0a1e7b]" style="font-size:28px">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobile-nav-menu" role="navigation" aria-label="Mobile menu">
+        <a class="mobile-nav-link" href="index.html">Home</a>
+        <a class="mobile-nav-link active" href="#" onclick="closeMobileMenu(); openModelsModal(); return false;">Models</a>
+        <a class="mobile-nav-link" href="locations.html">Location</a>
+        <a class="mobile-nav-link" href="about.html">About Us</a>
+        <div class="mobile-nav-cta">
+            <button onclick="closeMobileMenu(); openBookingModal();">Book Test Ride</button>
+        </div>
+    </div>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="ronin-hero min-h-[calc(100vh-80px)] flex flex-col lg:flex-row">
+            <!-- Left: Gallery -->
+            <div class="ronin-gallery-panel w-full lg:w-3/5 bg-[#f8fafc] relative overflow-hidden flex items-center justify-center p-8 lg:p-16">
+                <div class="product-gallery-container w-full max-w-4xl">
+                    <div id="productCarousel" class="product-carousel-track flex transition-transform duration-700 cubic-bezier(0.65, 0, 0.35, 1)">
+                        <!-- Images injected via JS -->
+                    </div>
+                </div>
+                
+                <!-- Gallery Interaction -->
+                <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-4 z-10">
+                    <button onclick="prevSlide()" class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center hover:bg-white hover:shadow-xl transition-all">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+                    <div id="carouselDots" class="flex gap-2">
+                        <!-- Dots injected via JS -->
+                    </div>
+                    <button onclick="nextSlide()" class="w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center hover:bg-white hover:shadow-xl transition-all">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right: Details -->
+            <div class="ronin-details-panel w-full lg:w-2/5 p-8 lg:p-16 flex flex-col justify-center">
+                <div class="max-w-md mx-auto w-full">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="h-px w-8 bg-[#bb0013]"></span>
+                        <span class="text-[#bb0013] font-bold text-sm tracking-widest uppercase">Track-Born. Road-Ready.</span>
+                    </div>
+                    <h1 class="text-4xl lg:text-6xl font-black text-[#0a1e7b] font-headline mb-4 italic leading-tight">TVS APACHE RR 310</h1>
+                    <p class="text-slate-500 text-lg mb-8 leading-relaxed">The TVS Apache RR 310 is India's most advanced supersport, crafted with BMW Motorrad technology. Purpose-built for the track, it is equally commanding on open roads.</p>
+
+                    <!-- Color Selector -->
+                    <div class="mb-10">
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">Select Your Style</h3>
+                        <div class="flex flex-wrap gap-4" id="colorSelector">
+                            <!-- Swatches injected via JS -->
+                        </div>
+                        <p id="selectedColorName" class="mt-4 text-primary font-bold text-lg">Bomber Grey</p>
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <button onclick="openBookingModal('Apache RR 310')" class="w-full bg-[#bb0013] text-white py-4 md:py-5 rounded-2xl font-black text-lg hover:bg-[#a00010] transition-all transform hover:-translate-y-1 shadow-2xl shadow-red-900/20 flex items-center justify-center gap-2 min-h-[56px]">
+                            BOOK TEST RIDE
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                        <p class="text-center text-slate-400 text-sm font-medium">No-obligation booking. Experience the RR 310 today.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specifications Section -->
+        <section class="ronin-spec-section py-12 md:py-24 bg-white border-t border-slate-100">
+            <div class="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-24">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-black text-primary italic font-headline mb-4">TECHNICAL SPECIFICATIONS</h2>
+                    <div class="h-1.5 w-24 bg-secondary mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="specsGrid">
+                    <!-- Categories and Specs will be injected/rendered here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0a1e7b] text-white py-12 md:py-16">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="text-3xl font-black mb-6">KNK TVS</div>
+                    <p class="text-slate-300 max-w-md leading-relaxed">Official TVS Dealership providing the best-in-class service and the entire range of TVS motorcycles and scooters. Experience the unscripted life with KNK TVS.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6 tracking-tight">Quick Links</h4>
+                    <ul class="space-y-4 text-slate-300">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#" onclick="openModelsModal(); return false;" class="hover:text-white transition-colors">Our Models</a></li>
+                        <li><a href="locations.html" class="hover:text-white transition-colors">Showroom Locator</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6 tracking-tight">Connect</h4>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">mail</span> contact@knktvs.com</li>
+                        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">call</span> +91 98XXX XXXXX</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-16 pt-8 text-center text-slate-400 text-sm">
+                &copy; 2026 KNK TVS. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-2xl w-full max-w-lg overflow-hidden shadow-2xl relative">
+            <button class="absolute top-4 right-4 text-slate-400 hover:text-primary transition-colors" onclick="closeBookingModal()">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="p-8">
+                <h3 class="text-3xl font-headline font-black text-primary italic mb-2">Book a Test Ride</h3>
+                <p class="text-on-surface-variant font-body mb-6">Fill in the details and we'll get in touch with you shortly.</p>
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                    <input type="hidden" name="access_key" value="eac43c22-9430-4def-902c-d5f2e43bb181">
+                    <div>
+                        <label class="block text-xs font-bold text-outline uppercase tracking-widest mb-2 px-1">Full Name</label>
+                        <input name="name" required class="w-full px-4 py-3 bg-slate-100 border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all font-body" placeholder="Enter your full name" type="text"/>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-outline uppercase tracking-widest mb-2 px-1">Email Address</label>
+                            <input name="email" required class="w-full px-4 py-3 bg-slate-100 border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all font-body" placeholder="your@email.com" type="email"/>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-outline uppercase tracking-widest mb-2 px-1">Phone Number</label>
+                            <input name="phone" required class="w-full px-4 py-3 bg-slate-100 border-none rounded-xl focus:ring-2 focus:ring-primary/20 transition-all font-body" placeholder="+91 00000 00000" type="tel"/>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-outline uppercase tracking-widest mb-2 px-1">Select Model</label>
+                        <input type="hidden" name="model" value="TVS Apache RR 310">
+                        <input type="text" value="TVS Apache RR 310" readonly class="w-full px-4 py-3 bg-slate-100 border-none rounded-xl font-body text-primary font-bold cursor-not-allowed opacity-80">
+                    </div>
+                    <button class="w-full bg-[#bb0013] text-white py-4 rounded-xl font-bold hover:bg-[#a00010] transition-colors shadow-lg shadow-red-900/10 mt-6" type="submit">
+                        Confirm Booking
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        function openBookingModal(model) {
+            document.getElementById('bookingModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('click', function(event) {
+            let modal = document.getElementById('bookingModal');
+            if (event.target == modal) closeBookingModal();
+        });
+        /* Mobile Menu */
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-nav-menu');
+            const icon = document.getElementById('hamburger-icon');
+            const btn  = document.getElementById('hamburger-btn');
+            const open = menu.classList.toggle('open');
+            icon.textContent = open ? 'close' : 'menu';
+            btn.setAttribute('aria-expanded', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+        }
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobile-nav-menu');
+            const icon = document.getElementById('hamburger-icon');
+            const btn  = document.getElementById('hamburger-btn');
+            menu.classList.remove('open');
+            icon.textContent = 'menu';
+            btn.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+        window.addEventListener('resize', () => { if (window.innerWidth >= 768) closeMobileMenu(); });
+    </script>
+    <script src="assets/js/models-modal.js"></script>
+    <script src="assets/js/rr310-details.js"></script>
+</body>
+</html>

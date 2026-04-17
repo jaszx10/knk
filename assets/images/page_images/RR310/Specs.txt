@@ -1,0 +1,178 @@
+Engine Features
+Engine Technology
+Single Cylinder, 4 Stroke, Fuel Injected, Liquid Cooled, Spark Ignited Engine
+Single Cylinder, 4 Stroke, Fuel Injected, Liquid Cooled, Spark Ignited Engine
+Engine Layout
+Inline Engine
+Inline Engine
+Number of Cylinders
+1
+1
+Transmission Type
+6-speed
+6-speed
+Bore X Stroke
+80 mm X 62.1 mm
+80 mm X 62.1 mm
+Engine Capacity
+312.2 cc
+312.2 cc
+Ignition System
+Self
+Self
+Compression Ratio
+12.17
+12.17
+Maximum Power
+Sport and Track Mode - 28 kW (at 9800 Engine RPM) (38 PS (at 9800 Engine RPM))
+Sport and Track Mode - 28 kW (at 9800 Engine RPM) (38 PS (at 9800 Engine RPM))
+Maximum Torque
+Sport and Track Mode - 29 Nm (at 7900 Engine RPM)
+Sport and Track Mode - 29 Nm (at 7900 Engine RPM)
+Clutch Type
+Wet Multi Plate - 7 Plate Design, RT Slipper Clutch
+Wet Multi Plate - 7 Plate Design, RT Slipper Clutch
+Fuel Supply
+Closed Loop EFI System
+Closed Loop EFI System
+Reverse Gear
+No
+No
+Engine Cooling System
+Liquid Cooled
+Liquid Cooled
+Transmission Features
+6 speed
+6 speed
+Fuel Supply Sub Type
+Fuel Injection
+Fuel Injection
+Chassis Features
+Frame Type
+Trellis Frame, Split Chassis
+Trellis Frame, Split Chassis
+Display Meters
+Console Features
+5 inch TFT
+5 inch TFT
+General
+Brand
+TVS
+TVS
+Model Name
+Apache RR 310
+Apache RR 310
+Model Year
+2025
+2025
+Model Version
+TVS Apache RR 310 Bomber Grey
+TVS Apache RR 310 Bomber Grey
+Brand Color
+Bomber Grey
+Bomber Grey
+Segment
+Sport
+Sport
+Color
+Grey
+Grey
+Maximum Speed
+164 kmph
+164 kmph
+Engine Oil Capacity
+1.8 L
+1.8 L
+Booking Type
+Booking for Ex-Showroom Price
+Booking for Ex-Showroom Price
+State
+Pan India
+Pan India
+Suspension
+Suspension (Front)
+Upside Down Fork
+Upside Down Fork
+Suspension (Rear)
+Monoshock
+Monoshock
+Dimensions
+Length
+2001 mm
+2001 mm
+Width
+786 mm
+786 mm
+Height
+1135 mm
+1135 mm
+Wheelbase
+1365 mm
+1365 mm
+Ground Clearance
+180 mm
+180 mm
+Seat Height
+810 mm
+810 mm
+Kerb Weight
+174 kg
+174 kg
+Dry Weight
+174 kg
+174 kg
+Wheel and Tire Features
+Tire Type
+Tubeless
+Tubeless
+Wheel Type
+Alloy Wheels
+Alloy Wheels
+Tire Size (Front)
+110/70-ZR17 M/C 54W
+110/70-ZR17 M/C 54W
+Tire Size (Rear)
+50/60-ZR17 M/C 66W
+50/60-ZR17 M/C 66W
+Tire Features
+The TVS Apache RR 310 is equipped with Michelin Road 5 tyres Engineered with next gen compounds and featuring Michelins patented Act+ technology, these tyres provide superior grip for cornering and offer a premium ride feel
+The TVS Apache RR 310 is equipped with Michelin Road 5 tyres Engineered with next gen compounds and featuring Michelins patented Act+ technology, these tyres provide superior grip for cornering and offer a premium ride feel
+Brake Features
+ABS
+Yes
+Yes
+ABS Type
+Dual Channel
+Dual Channel
+Brake (Front)
+Disc
+Disc
+Brake (Rear)
+Disc
+Disc
+Disc Size (Front)
+300 mm
+300 mm
+Disc Size (Rear)
+240 mm
+240 mm
+Electricals
+Head Lamp
+Bi-LED Twin Projector
+Bi-LED Twin Projector
+Battery
+12 V
+12 V
+Tail Lamp
+LED
+LED
+Indicator Features
+LED
+LED
+Fuel Tank
+Fuel Tank Capacity
+11 L
+11 L
+Reserve Tank Capacity
+1 L
+1 L

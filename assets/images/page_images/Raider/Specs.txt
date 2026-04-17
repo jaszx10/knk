@@ -1,0 +1,163 @@
+Sales Package
+ 
+Service Manual; Mandatory Accessories
+Service Manual; Mandatory Accessories
+Engine Features
+Engine Technology
+Air and Oil Cooled
+Air and Oil Cooled
+Number of Cylinders
+1
+1
+Transmission Type
+5-speed
+5-speed
+Bore X Stroke
+53.5 mm X 55.5 mm
+53.5 mm X 55.5 mm
+Engine Capacity
+124.8 cc
+124.8 cc
+Ignition System
+Self
+Self
+Compression Ratio
+10.3 : 1
+10.3 : 1
+Maximum Power
+8.37@7500 rpm
+8.37@7500 rpm
+Maximum Torque
+11.75Nm@6000 rpm
+11.75Nm@6000 rpm
+Clutch Type
+Wet, Multi Plate
+Wet, Multi Plate
+Fuel Supply
+ETFi
+ETFi
+Gear Ratio
+primary: 3.25 ; secondary: 3.285
+primary: 3.25 ; secondary: 3.285
+Reverse Gear
+No
+No
+Fuel Supply Sub Type
+ETFi
+ETFi
+Other Engine Features
+air and oil cooled
+air and oil cooled
+Display Meters
+Console Features
+Reverse LCD
+Reverse LCD
+General
+Brand
+TVS
+TVS
+Model Name
+Raider Super Squad(SSE)
+Raider Super Squad(SSE)
+Model Year
+2025
+2025
+Model Version
+Super Squad(SSE)
+Super Squad(SSE)
+Brand Color
+Wolverine
+Wolverine
+Segment
+Standard
+Standard
+Color
+Black, Grey, Yellow
+Black, Grey, Yellow
+Engine Oil Capacity
+10 L
+10 L
+Booking Type
+Booking for Ex-Showroom Price
+Booking for Ex-Showroom Price
+State
+Pan India
+Pan India
+Key Features
+First in segment GTT. 85+ connected features. Multiple ride modes.
+First in segment GTT. 85+ connected features. Multiple ride modes.
+Suspension
+Suspension (Front)
+Telescopic
+Telescopic
+Suspension (Rear)
+Monoshock
+Monoshock
+Dimensions
+Length
+2070 mm
+2070 mm
+Width
+785 mm
+785 mm
+Height
+1028 mm
+1028 mm
+Wheelbase
+1326 mm
+1326 mm
+Ground Clearance
+180 mm
+180 mm
+Kerb Weight
+123 kg
+123 kg
+Wheel and Tire Features
+Tire Type
+Tubeless
+Tubeless
+Wheel Type
+Alloy Wheels
+Alloy Wheels
+Tire Size (Front)
+80/100-17 inch
+80/100-17 inch
+Tire Size (Rear)
+100/90-17 inch
+100/90-17 inch
+Tire Features
+Tubeless
+Tubeless
+Brake Features
+ABS
+No
+No
+Brake (Front)
+Disc
+Disc
+Brake (Rear)
+Drum
+Drum
+Disc Size (Front)
+240 mm
+240 mm
+Disc Size (Rear)
+130 mm
+130 mm
+Other Brake Features
+SBT- Synchronied braking technology
+SBT- Synchronied braking technology
+Electricals
+Head Lamp
+LED
+LED
+Battery
+12 V
+12 V
+Tail Lamp
+LED
+LED
+Fuel Tank
+Fuel Tank Capacity
+10 L
+10 L

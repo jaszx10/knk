@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/css/models-modal.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/customer-carousel.css">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script id="tailwind-config">
         tailwind.config = {
@@ -185,47 +186,83 @@
             </div>
         </section>
 
-
-        <!-- Featured Models -->
-        <section class="featured-models-section py-24 bg-surface-container-low overflow-hidden">
-            <div class="max-w-[1440px] mx-auto px-4 md:px-12">
-                <div class="featured-models-header flex justify-between items-center mb-16">
-                    <h2 class="text-5xl font-headline font-black text-primary italic tracking-tighter">Lineup 2024</h2>
-                    <a href="models.html" class="text-primary font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">View All Models <span class="material-symbols-outlined">trending_flat</span></a>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="md:col-span-2 relative group">
-                        <div class="apache-card bg-surface-container-lowest rounded-xl p-12 h-full flex flex-col justify-between overflow-hidden">
-                            <div class="relative z-10">
-                                <span class="text-secondary font-black tracking-[0.3em] uppercase text-xs">Performance</span>
-                                <h3 class="text-6xl font-headline font-black text-primary mt-4 italic">Apache RR 310</h3>
-                                <p class="text-on-surface-variant mt-4 max-w-sm">Pure racing DNA. Precision engineering. Experience the apex predator of the 300cc segment.</p>
-                                <div class="mt-8 space-y-2">
-                                    <div class="flex items-center gap-2 font-black text-primary">
-                                        <span class="material-symbols-outlined text-sm">speed</span> 160 KMPH TOP SPEED
-                                    </div>
-                                    <div class="flex items-center gap-2 font-black text-primary">
-                                        <span class="material-symbols-outlined text-sm">settings_input_component</span> 34 HP POWER
-                                    </div>
-                                </div>
-                            </div>
-                            <img loading="lazy" class="bike-img absolute -bottom-10 -right-20 w-[80%] object-contain transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQK5D_VCVPY1brsKV2wh7khQ0Cs2qT_DJ2sjcYE6dEDVXxgOFZymqIiGYj2CuLvRrDtTedftpkaQT0bbhfcqw-raJoPckzdUdtXEgO9RCLeDxWXCOGbz8EYI_7l3apalhLpIplzl5PMSXcltUW5ZSTV7XtQXNLDK77onVZLrrcZlKlQoZOG3thyuWDGABH-JDyuntu3nWWJ1SIGLovaUrZsdrRFPYMSBH6jMTFg27tOlGe0c_EhtvSkNSp0ktWrsldYckzY42BZJql"/>
-                        </div>
-                    </div>
-                    <div class="jupiter-card bg-surface-container-lowest rounded-xl p-10 flex flex-col justify-between group">
-                        <div>
-                            <span class="text-primary/40 font-black tracking-[0.3em] uppercase text-xs">Lifestyle</span>
-                            <h3 class="text-4xl font-headline font-black text-primary mt-2 italic">Jupiter 125</h3>
-                            <p class="text-sm text-on-surface-variant mt-4">The intelligent choice for the modern family. More space, more comfort.</p>
-                        </div>
-                        <div class="relative mt-8">
-                            <img loading="lazy" class="w-full object-contain transform group-hover:-translate-y-4 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAzVXdK9tcahy9q-mWMU7SRhU92Qw_7zwBlAa-b3ImIY7i6NKcG5elzI8YPEhop-sSpzBrSgxeoycYp_4T7R1DmJDawwwz680x0Ym4zJK2s5JV8_EcF082L5RShgnyKl3w5VrSmL8xG0Vzal4zD5yiqzu3c_aIQoM2jUKXc7st2822X1UwHcloASvtgeDCg5tCalOA3IjlQ_X-J3TNJhKnoH8yLvynBNkWfheI3suyzFysAQm8V7xlyK3vHR_3OsCs9BgXhDqQB4Pj"/>
-                        </div>
-                        <button class="mt-6 w-full py-4 border border-outline-variant/30 rounded-xl font-bold hover:bg-primary hover:text-on-primary transition-colors">Compare Stats</button>
-                    </div>
+        <!-- Trusted Customers Carousel -->
+        <section class="trusted-section py-20 bg-surface border-b border-surface-container-high overflow-hidden">
+            <div class="max-w-[1440px] mx-auto px-4 md:px-12 text-center">
+                <h2 class="text-3xl md:text-5xl font-headline font-black text-primary italic mb-12 uppercase tracking-tighter">Trusted by the people of Kanchipuram</h2>
+                
+                <div class="trusted-carousel-container trusted-carousel-engine w-full max-w-5xl mx-auto">
+                    <!-- Carousel items injected by JS -->
                 </div>
             </div>
         </section>
+
+        <!-- Trending Now in 2026 -->
+        <section class="trending-section py-20 bg-white border-b border-surface-container-high overflow-hidden">
+            <div class="max-w-[1440px] mx-auto px-4 md:px-12">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                    <div>
+                        <span class="text-secondary font-bold text-sm tracking-[0.2em] uppercase mb-4 block">Most Purchased in 2026</span>
+                        <h2 class="text-4xl md:text-5xl font-headline font-black text-primary italic tracking-tighter uppercase">Trending Now</h2>
+                    </div>
+                    <p class="text-on-surface-variant max-w-md font-body">Our top 5 most popular TVS models right now in Kanchipuram, selected for their unmatched performance and style.</p>
+                </div>
+
+                <div class="grid grid-cols-2 lg:grid-cols-5 gap-6">
+                    <!-- TVS Raider -->
+                    <a href="raider.html" class="group relative bg-surface-container-low rounded-2xl p-6 transition-all duration-500 hover:bg-primary hover:-translate-y-2">
+                        <span class="absolute top-4 right-4 bg-secondary text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider z-10 transition-transform group-hover:scale-110">Youth Favorite</span>
+                        <div class="aspect-square mb-6 overflow-hidden">
+                            <img loading="lazy" src="assets/images/cover-images/TVS Raider.webp" alt="TVS Raider" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <h3 class="text-xl font-headline font-black text-primary group-hover:text-white transition-colors">TVS Raider</h3>
+                        <p class="text-xs text-on-surface-variant group-hover:text-white/70 transition-colors mt-1 font-body">Premium 125cc Commuter</p>
+                    </a>
+
+                    <!-- TVS iQube -->
+                    <a href="iqube.html" class="group relative bg-surface-container-low rounded-2xl p-6 transition-all duration-500 hover:bg-primary hover:-translate-y-2">
+                        <span class="absolute top-4 right-4 bg-[#00d084] text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider z-10 transition-transform group-hover:scale-110">Smart Choice</span>
+                        <div class="aspect-square mb-6 overflow-hidden">
+                            <img loading="lazy" src="assets/images/cover-images/Tvs iqube.webp" alt="TVS iQube" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <h3 class="text-xl font-headline font-black text-primary group-hover:text-white transition-colors">TVS iQube</h3>
+                        <p class="text-xs text-on-surface-variant group-hover:text-white/70 transition-colors mt-1 font-body">Electric Mobility</p>
+                    </a>
+
+                    <!-- Apache RTR 160 4V -->
+                    <a href="rtr1604v.html" class="group relative bg-surface-container-low rounded-2xl p-6 transition-all duration-500 hover:bg-primary hover:-translate-y-2">
+                        <span class="absolute top-4 right-4 bg-secondary text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider z-10 transition-transform group-hover:scale-110">Performance King</span>
+                        <div class="aspect-square mb-6 overflow-hidden">
+                            <img loading="lazy" src="assets/images/cover-images/Apache RTR 160 4V.webp" alt="Apache RTR 160 4V" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <h3 class="text-xl font-headline font-black text-primary group-hover:text-white transition-colors">RT-R 160 4V</h3>
+                        <p class="text-xs text-on-surface-variant group-hover:text-white/70 transition-colors mt-1 font-body">Racing DNA</p>
+                    </a>
+
+                    <!-- TVS Ronin -->
+                    <a href="ronin.html" class="group relative bg-surface-container-low rounded-2xl p-6 transition-all duration-500 hover:bg-primary hover:-translate-y-2">
+                        <span class="absolute top-4 right-4 bg-[#ff6b00] text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider z-10 transition-transform group-hover:scale-110">Urban Modern</span>
+                        <div class="aspect-square mb-6 overflow-hidden">
+                            <img loading="lazy" src="assets/images/cover-images/TVS Ronin.webp" alt="TVS Ronin" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <h3 class="text-xl font-headline font-black text-primary group-hover:text-white transition-colors">TVS Ronin</h3>
+                        <p class="text-xs text-on-surface-variant group-hover:text-white/70 transition-colors mt-1 font-body">Unscripted Style</p>
+                    </a>
+
+                    <!-- Apache RR 310 -->
+                    <a href="rr310.html" class="group relative bg-surface-container-low rounded-2xl p-6 transition-all duration-500 hover:bg-primary hover:-translate-y-2">
+                        <span class="absolute top-4 right-4 bg-secondary text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider z-10 transition-transform group-hover:scale-110">Track Ready</span>
+                        <div class="aspect-square mb-6 overflow-hidden">
+                            <img loading="lazy" src="assets/images/cover-images/RR 310.webp" alt="Apache RR 310" class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <h3 class="text-xl font-headline font-black text-primary group-hover:text-white transition-colors">RR 310</h3>
+                        <p class="text-xs text-on-surface-variant group-hover:text-white/70 transition-colors mt-1 font-body">Flagship SuperSport</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <!-- Footer -->
@@ -235,33 +272,27 @@
                 <span class="text-xl font-bold text-[#0a1e7b] font-headline">KNK TVS</span>
                 <p class="text-slate-500 text-sm font-body leading-relaxed">Pioneering the future of two-wheelers through engineering excellence and a commitment to sustainable performance.</p>
                 <div class="flex gap-4">
-                    <span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer">social_leaderboard</span>
-                    <span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer">potted_plant</span>
-                    <span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer">share</span>
+                    <span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer" onclick="handleShare()">share</span>
                 </div>
             </div>
             <div>
                 <h4 class="font-headline font-bold text-[#0a1e7b] mb-6">Quick Links</h4>
                 <ul class="space-y-4">
                     <li><a class="text-slate-500 hover:text-[#bb0013] underline underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="about.html">About Our Dealership</a></li>
-                    <li><a class="text-slate-500 hover:text-[#bb0013] underline underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="#" onclick="openBookingModal(); return false;">Service Booking</a></li>
-                    <li><a class="text-slate-500 hover:text-[#bb0013] underline underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="locations.html">Insurance Partners</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="font-headline font-bold text-[#0a1e7b] mb-6">Legal &amp; Support</h4>
                 <ul class="space-y-4">
-                    <li><a class="text-slate-500 hover:text-[#bb0013] underline underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="#">Privacy Policy</a></li>
-                    <li><a class="text-slate-500 hover:text-[#bb0013] underline underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="#">Terms of Service</a></li>
                     <li><a class="text-slate-500 hover:text-[#bb0013] underline underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="locations.html">Dealer Locator</a></li>
-                    <li><a class="text-slate-500 hover:text-[#bb0013] underline underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="about.html">Contact Us</a></li>
+                    <li><a class="text-slate-500 hover:text-[#bb0013] underline underline-offset-4 text-sm transition-opacity opacity-80 hover:opacity-100" href="tel:+917305996053">Contact Us</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="font-headline font-bold text-[#0a1e7b] mb-6">Visit Our Showroom</h4>
                 <div class="space-y-4 text-sm text-slate-500 leading-relaxed">
-                    <p class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">location_on</span> 123 Racing Avenue, High Performance Park, Bengaluru, 560001</p>
-                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">call</span> +91 98765 43210</p>
+                    <p class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">location_on</span> Toll Gate, NO.52 K S, Murugesa Mudaliar Nagar, SBI Colony, Kanchipuram, Tamil Nadu 631501</p>
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">call</span> +91 7305996053</p>
                     <p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">schedule</span> Mon - Sat: 9:00 AM - 8:00 PM</p>
                 </div>
             </div>
@@ -381,6 +412,26 @@
             if (window.innerWidth >= 768) closeMobileMenu();
         });
 
+        /* ── Sharing Functionality ── */
+        function handleShare() {
+            const shareData = {
+                title: 'KNK TVS',
+                text: 'Check out KNK TVS - Kanchipuram\'s leading TVS dealership!',
+                url: 'https://knktvs.com'
+            };
+
+            if (navigator.share) {
+                navigator.share(shareData).catch(err => console.log('Error sharing:', err));
+            } else {
+                // Fallback: Copy to clipboard
+                navigator.clipboard.writeText('https://knktvs.com').then(() => {
+                    alert('Link copied to clipboard: https://knktvs.com');
+                }).catch(err => {
+                    console.error('Failed to copy link: ', err);
+                });
+            }
+        }
+
         /* ── Vertical Adboard ── */
         const SLIDE_DURATION = 5000;
         let currentSlide = 0;
@@ -467,5 +518,6 @@
         updateSlider();
     </script>
     <script src="assets/js/models-modal.js"></script>
+    <script src="assets/js/customer-carousel.js"></script>
 </body>
 </html>

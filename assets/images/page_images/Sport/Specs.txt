@@ -1,0 +1,176 @@
+Engine Features
+Engine Technology
+Eco Thrust Fuel Injection, air cooled
+Eco Thrust Fuel Injection, air cooled
+Engine Layout
+Cylinder Engine
+Cylinder Engine
+Number of Cylinders
+1
+1
+Transmission Type
+4-speed
+4-speed
+Bore X Stroke
+53.5 mm X 48.8 mm
+53.5 mm X 48.8 mm
+Engine Capacity
+109.7 cc
+109.7 cc
+Ignition System
+Self & Kick
+Self & Kick
+Compression Ratio
+10:01
+10:01
+Maximum Power
+8.18 bhp @ 7,350 rpm
+8.18 bhp @ 7,350 rpm
+Maximum Torque
+8.7 Nm @ 4500 rpm
+8.7 Nm @ 4500 rpm
+Clutch Type
+Wet Multiplate
+Wet Multiplate
+Fuel Supply
+Fuel Injection
+Fuel Injection
+Reverse Gear
+No
+No
+Engine Cooling System
+Air Cooled
+Air Cooled
+Transmission Features
+4-speed constant mesh
+4-speed constant mesh
+Fuel Supply Sub Type
+Fuel Injection
+Fuel Injection
+Display Meters
+Console Features
+Analogue
+Analogue
+Suspension
+Suspension (Front)
+Telescopic Oil-Damped
+Telescopic Oil-Damped
+Suspension (Rear)
+Hydraulic Shock Absorber
+Hydraulic Shock Absorber
+Dimensions
+Length
+1950 mm
+1950 mm
+Width
+705 mm
+705 mm
+Height
+1080 mm
+1080 mm
+Wheelbase
+1236 mm
+1236 mm
+Ground Clearance
+175 mm
+175 mm
+Seat Height
+790 mm
+790 mm
+Kerb Weight
+110 kg
+110 kg
+Dry Weight
+240 kg
+240 kg
+Brake Features
+ABS
+No
+No
+Brake (Front)
+Drum
+Drum
+Brake (Rear)
+Drum
+Drum
+Disc Size (Front)
+130 mm
+130 mm
+Disc Size (Rear)
+110 mm
+110 mm
+Electricals
+Head Lamp
+Halogen
+Halogen
+Battery
+12 V
+12 V
+Tail Lamp
+Bulb
+Bulb
+Indicator Features
+Bulb
+Bulb
+Sales Package
+ 
+Service Manual, Mandatory Accessories
+Service Manual, Mandatory Accessories
+Chassis Features
+Frame Type
+Single Cradle Tubular
+Single Cradle Tubular
+General
+Brand
+TVS
+TVS
+Model Name
+Sport
+Sport
+Model Year
+2025
+2025
+Model Version
+ELS
+ELS
+Brand Color
+White Purple
+White Purple
+Segment
+Standard
+Standard
+Color
+Purple
+Purple
+Maximum Speed
+90 kmph
+90 kmph
+Engine Oil Capacity
+1 L
+1 L
+Booking Type
+Booking for Ex-Showroom Price
+Booking for Ex-Showroom Price
+State
+Pan India
+Pan India
+Wheel and Tire Features
+Tire Type
+Tubed
+Tubed
+Wheel Type
+Alloy Wheels
+Alloy Wheels
+Tire Size (Front)
+2.75 x 17" 41P
+2.75 x 17" 41P
+Tire Size (Rear)
+3.0 x 17" 50P
+3.0 x 17" 50P
+Fuel Tank
+Fuel Tank Capacity
+10 L
+10 L
+Reserve Tank Capacity
+2 L
+2 L

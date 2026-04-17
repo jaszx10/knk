@@ -1,0 +1,159 @@
+General
+Brand
+TVS iQube
+TVS iQube
+Model Name
+2.2 kWh
+2.2 kWh
+Model Year
+2026
+2026
+Brand Color
+Walnut Brown
+Walnut Brown
+Type
+Electric Scooter
+Electric Scooter
+Model Version
+2.2 kWh
+2.2 kWh
+Booking Type
+Booking for Ex-Showroom Price
+Booking for Ex-Showroom Price
+Color
+Brown
+Brown
+Motor Type
+Brushless DC Hub Motor
+Brushless DC Hub Motor
+Body Material
+Alloys
+Alloys
+Wheel Material
+Alloys
+Alloys
+Number of Wheels
+2
+2
+Seating Capacity
+2
+2
+Transmission Type
+Automatic
+Automatic
+Maximum Torque
+140 Nm
+140 Nm
+Maximum Speed
+78 kmph
+78 kmph
+Range
+75 km
+75 km
+Console Features
+Turn by Turn Navigation, Distance to Empty, Remote Charge Status
+Turn by Turn Navigation, Distance to Empty, Remote Charge Status
+Tail Lamp
+LED
+LED
+Turn Light
+LED
+LED
+State
+Pan India
+Pan India
+City
+Pan India
+Pan India
+Disc Size Front
+220 mm
+220 mm
+Disc Size Rear
+130 mm
+130 mm
+Frame Type
+Tubular
+Tubular
+Fuel Supply
+Electric
+Electric
+Segment
+Electric
+Electric
+Suspension
+Suspension (Front)
+Telescopic Fork
+Telescopic Fork
+Suspension (Rear)
+Dualshock
+Dualshock
+Dimensions
+Length
+1.805 m
+1.805 m
+Width
+0.645 m
+0.645 m
+Height
+1.14 m
+1.14 m
+Wheelbase
+1301 mm
+1301 mm
+Seat Height
+77 cm
+77 cm
+Kerb Weight
+110 kg
+110 kg
+Total Weight
+110 kg
+110 kg
+Ground Clearance
+157 mm
+157 mm
+Power Features
+Number of Batteries
+2
+2
+Power Source
+Chargeable
+Chargeable
+Maximum Power
+4400 W
+4400 W
+Battery Size
+2.2 kWh
+2.2 kWh
+Battery Type
+Lithium ion
+Lithium ion
+Battery Capacity
+2.2 kWh
+2.2 kWh
+Motor Power
+4.4 kW
+4.4 kW
+Charging Time
+2.75 Hr
+2.75 Hr
+Wheel and Tire Features
+Tire Type
+Tubeless
+Tubeless
+Wheel Type
+Alloy Wheel
+Alloy Wheel
+Tire Size (Front)
+90/90-12
+90/90-12
+Tire Size (Rear)
+90/90-12
+90/90-12
+Brake Features
+Brake (Front)
+Disc
+Disc
+Brake (Rear)
+Drum
+Drum

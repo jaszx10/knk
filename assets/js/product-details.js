@@ -1,4 +1,4 @@
-/**
+﻿/**
  * TVS Ronin Product Details Logic
  */
 
@@ -142,7 +142,7 @@ let currentState = {
 function initProductPage() {
     renderColorSelector();
     renderSpecs();
-    updateGallery();
+    selectColor(0);
 }
 
 function renderColorSelector() {

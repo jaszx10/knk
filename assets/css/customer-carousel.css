@@ -1,0 +1,116 @@
+.trusted-carousel-container {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1200px;
+    overflow: hidden;
+}
+
+.trusted-carousel-item {
+    position: absolute;
+    width: 280px;
+    height: 420px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.8s ease, z-index 0s, visibility 0.8s;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    /* By default invisible */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(0) scale(0.4);
+    z-index: 1;
+    background: transparent;
+}
+
+/* Base style for the image */
+.trusted-carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: filter 0.8s ease;
+}
+
+/* ACTIVE CENTER */
+.trusted-carousel-item.center {
+    transform: translateX(0) scale(1.1);
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0 40px 80px rgba(10, 30, 123, 0.4);
+}
+.trusted-carousel-item.center img {
+    filter: brightness(100%) blur(0px);
+}
+
+/* LEFT 1 */
+.trusted-carousel-item.left1 {
+    transform: translateX(-65%) scale(0.9);
+    z-index: 5;
+    opacity: 0.9;
+    visibility: visible;
+}
+.trusted-carousel-item.left1 img {
+    filter: brightness(60%) blur(3px);
+}
+
+/* LEFT 2 */
+.trusted-carousel-item.left2 {
+    transform: translateX(-120%) scale(0.7);
+    z-index: 3;
+    opacity: 0.5;
+    visibility: visible;
+}
+.trusted-carousel-item.left2 img {
+    filter: brightness(40%) blur(6px);
+}
+
+/* RIGHT 1 */
+.trusted-carousel-item.right1 {
+    transform: translateX(65%) scale(0.9);
+    z-index: 5;
+    opacity: 0.9;
+    visibility: visible;
+}
+.trusted-carousel-item.right1 img {
+    filter: brightness(60%) blur(3px);
+}
+
+/* RIGHT 2 */
+.trusted-carousel-item.right2 {
+    transform: translateX(120%) scale(0.7);
+    z-index: 3;
+    opacity: 0.5;
+    visibility: visible;
+}
+.trusted-carousel-item.right2 img {
+    filter: brightness(40%) blur(6px);
+}
+
+@media (max-width: 768px) {
+    .trusted-carousel-container {
+        height: 480px;
+    }
+    .trusted-carousel-item {
+        width: 220px;
+        height: 330px;
+    }
+    .trusted-carousel-item.center {
+        transform: translateX(0) scale(1);
+    }
+    .trusted-carousel-item.left1 {
+        transform: translateX(-50%) scale(0.85);
+    }
+    .trusted-carousel-item.right1 {
+        transform: translateX(50%) scale(0.85);
+    }
+    .trusted-carousel-item.left2 {
+        transform: translateX(-90%) scale(0.7);
+    }
+    .trusted-carousel-item.right2 {
+        transform: translateX(90%) scale(0.7);
+    }
+}

@@ -1,0 +1,145 @@
+Engine Features
+Engine Type
+Four-Stroke
+Four-Stroke
+Engine Capacity
+109.7 cc
+109.7 cc
+Engine Cooling System
+Air Cooled
+Air Cooled
+Transmission Type
+CVT
+CVT
+Number of Gears
+Non Gear
+Non Gear
+Ignition System
+Self & Kick
+Self & Kick
+Compression Ratio
+10:01
+10:01
+Maximum Horse Power
+5.75 kW @ 7500 rpm
+5.75 kW @ 7500 rpm
+Maximum Torque
+8.8 Nm @ 5500 rpm
+8.8 Nm @ 5500 rpm
+Clutch Type
+Dry - Centrifugal clutch
+Dry - Centrifugal clutch
+Fuel Supply
+Fuel Injection
+Fuel Injection
+Number of Cylinders
+1
+1
+Chassis Features
+Frame Type
+Duplex tubular frame
+Duplex tubular frame
+Front Brake
+Drum
+Drum
+Rear Brake
+Drum
+Drum
+Suspension Rear
+Double Rated Hydraulic Mono Shock
+Double Rated Hydraulic Mono Shock
+Front Suspension
+Telescopic
+Telescopic
+General
+Brand
+TVS
+TVS
+Model Name
+Zest
+Zest
+Model Year
+2026
+2026
+Model Version
+110
+110
+Type
+Scooter
+Scooter
+Brand Color
+Turquoise Blue
+Turquoise Blue
+Color
+Blue
+Blue
+Fuel Tank Capacity
+5 L
+5 L
+Maximum Speed
+80 kmph
+80 kmph
+Console Features
+Analog Speedometer
+Analog Speedometer
+RTO Registration and Driving License
+Yes
+Yes
+State
+Pan India
+Pan India
+Booking Type
+Booking for Ex-Showroom Price
+Booking for Ex-Showroom Price
+Additional Features
+Under Seat Storage
+19
+19
+Dimensions
+Length
+1770 mm
+1770 mm
+Width
+660 mm
+660 mm
+Height
+1139 mm
+1139 mm
+Wheelbase
+1250 mm
+1250 mm
+Ground Clearance
+135 mm
+135 mm
+Seat Height
+760 mm
+760 mm
+Kerb Weight
+102 kg
+102 kg
+Dry Weight
+102 kg
+102 kg
+Wheel and Tire Features
+Tire Type
+Tubeless
+Tubeless
+Front Tire Size
+90 / 100 - 10
+90 / 100 - 10
+Rear Tire Size
+90 / 100 - 10
+90 / 100 - 10
+Wheel Type
+Steel Wheels
+Steel Wheels
+Electricals
+Head Lamp
+LED Lamp
+LED Lamp
+Battery
+12 V
+12 V
+Tail Lamp
+LED Lamp
+LED Lamp

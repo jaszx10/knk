@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/css/models-modal.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/customer-carousel.css">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script id="tailwind-config">
         tailwind.config = {
@@ -104,7 +105,7 @@
                 </div>
                 <div class="col-span-12 md:col-span-6 relative">
                     <div class="absolute -top-20 -right-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl hidden md:block"></div>
-                    <img loading="lazy" alt="Racing motorcycle detail" class="about-hero-img rounded-xl shadow-2xl relative z-10 w-full object-cover aspect-[4/3] md:-rotate-2 md:transform md:translate-x-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxKU8a5dqVTQxpl64-RgWy2tpPjeEnm13McACjEiw6wYkZN6CnwObvdLJRcOZZbZU6xC9taPmTvE1yqzwHeSuiRYVAKsczJr7kLc84BHzBA3bov84Zpug0_szk9UnTOCFqvootjG7C1QZr4IdhnoAYO9ZO7hVtFyXqtidXHHMh_1AriLrgH_7CDlfoj0ffIVJbNk-cCX6ajqDWj_pWO8pWkZJ7QWyAfgqUXVtkHWJiv01O4AMvm4Ee64SBFkfzzltLaxSEb1iqRvnP"/>
+                    <img loading="lazy" alt="TVS Apache RR 310" class="about-hero-img rounded-xl shadow-2xl relative z-10 w-full object-cover aspect-[4/3] md:-rotate-2 md:transform md:translate-x-12" src="assets/images/page_images/RR310/Racing_Red/1.webp"/>
                 </div>
             </div>
         </section>
@@ -122,11 +123,11 @@
                         </div>
                         <div class="vision-stats mt-8 md:mt-12 flex gap-12 z-10">
                             <div>
-                                <span class="block text-4xl font-headline font-black text-secondary">25+</span>
+                                <span class="block text-4xl font-headline font-black text-secondary">3+</span>
                                 <span class="text-sm font-label text-outline uppercase tracking-widest">Years of Excellence</span>
                             </div>
                             <div>
-                                <span class="block text-4xl font-headline font-black text-secondary">50k+</span>
+                                <span class="block text-4xl font-headline font-black text-secondary">5k+</span>
                                 <span class="text-sm font-label text-outline uppercase tracking-widest">Happy Riders</span>
                             </div>
                         </div>
@@ -138,6 +139,17 @@
                             Precision in every bolt. Integrity in every deal. Passion in every ride. We believe that a motorcycle is more than transportation—it's an extension of the soul.
                         </p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted Customers Carousel -->
+        <section class="trusted-section py-20 bg-surface border-b border-surface-container-high overflow-hidden mt-12">
+            <div class="max-w-[1440px] mx-auto px-4 md:px-12 text-center">
+                <h2 class="text-3xl md:text-5xl font-headline font-black text-primary italic mb-12 uppercase tracking-tighter">Trusted by the people of Kanchipuram</h2>
+                
+                <div class="trusted-carousel-container trusted-carousel-engine w-full max-w-5xl mx-auto">
+                    <!-- Carousel items injected by JS -->
                 </div>
             </div>
         </section>
@@ -280,5 +292,6 @@
         window.addEventListener('resize', () => { if (window.innerWidth >= 768) closeMobileMenu(); });
     </script>
     <script src="assets/js/models-modal.js"></script>
+    <script src="assets/js/customer-carousel.js"></script>
 </body>
 </html>

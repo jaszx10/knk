@@ -163,6 +163,58 @@ function createModelCard(model, index) {
         card.onclick = () => {
             window.location.href = "ronin.html";
         };
+    } else if (model.name === "Apache RR 310") {
+        card.onclick = () => {
+            window.location.href = "rr310.html";
+        };
+    } else if (model.name === "Apache RTR 310") {
+        card.onclick = () => {
+            window.location.href = "rtr310.html";
+        };
+    } else if (model.name === "Apache RTR 200 4V") {
+        card.onclick = () => {
+            window.location.href = "rtr200-4v.html";
+        };
+    } else if (model.name === "Apache RTR 180") {
+        card.onclick = () => {
+            window.location.href = "rtr180.html";
+        };
+    } else if (model.name === "Apache RTR 160 4V") {
+        card.onclick = () => {
+            window.location.href = "rtr1604v.html";
+        };
+    } else if (model.name === "Apache RTR 160") {
+        card.onclick = () => {
+            window.location.href = "rtr160.html";
+        };
+    } else if (model.name === "TVS Raider") {
+        card.onclick = () => {
+            window.location.href = "raider.html";
+        };
+    } else if (model.name === "TVS Radeon") {
+        card.onclick = () => {
+            window.location.href = "radeon.html";
+        };
+    } else if (model.name === "TVS Sport") {
+        card.onclick = () => {
+            window.location.href = "sport.html";
+        };
+    } else if (model.name === "TVS XL100") {
+        card.onclick = () => {
+            window.location.href = "xl100.html";
+        };
+    } else if (model.name === "TVS X") {
+        card.onclick = () => {
+            window.location.href = "tvsx.html";
+        };
+    } else if (model.name === "TVS iQube") {
+        card.onclick = () => {
+            window.location.href = "iqube.html";
+        };
+    } else if (model.name === "Zest 110") {
+        card.onclick = () => {
+            window.location.href = "zest110.html";
+        };
     } else {
         card.onclick = () => {
             if (window.openBookingModal) {
